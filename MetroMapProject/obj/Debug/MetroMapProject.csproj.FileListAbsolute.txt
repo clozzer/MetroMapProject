@@ -16,3 +16,12 @@ C:\Users\Susanne Möhring\Documents\GitHub\MetroMapProject\MetroMapProject\obj\D
 C:\Users\Susanne Möhring\Documents\GitHub\MetroMapProject\MetroMapProject\obj\Debug\MetroMapProject.csproj.GenerateResource.Cache
 C:\Users\Susanne Möhring\Documents\GitHub\MetroMapProject\MetroMapProject\bin\Debug\MetroMapProject.exe
 C:\Users\Susanne Möhring\Documents\GitHub\MetroMapProject\MetroMapProject\bin\Debug\MetroMapProject.pdb
+E:\testproject\MetroMapProject\bin\Debug\MetroMapProject.exe.config
+E:\testproject\MetroMapProject\obj\Debug\MetroMapProject.exe
+E:\testproject\MetroMapProject\obj\Debug\MetroMapProject.pdb
+E:\testproject\MetroMapProject\bin\Debug\MetroMapProject.exe
+E:\testproject\MetroMapProject\bin\Debug\MetroMapProject.pdb
+E:\testproject\MetroMapProject\obj\Debug\MetroMapProject.csprojResolveAssemblyReference.cache
+E:\testproject\MetroMapProject\obj\Debug\MetroMapProject.Form1.resources
+E:\testproject\MetroMapProject\obj\Debug\MetroMapProject.Properties.Resources.resources
+E:\testproject\MetroMapProject\obj\Debug\MetroMapProject.csproj.GenerateResource.Cache
