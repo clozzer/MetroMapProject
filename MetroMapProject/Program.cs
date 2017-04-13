@@ -28,7 +28,7 @@ namespace MetroMapProject
             //loadGraph();
 
 
-            g1.far(200, 10);
+            g1.far(10000, 10);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
