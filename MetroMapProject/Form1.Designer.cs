@@ -34,10 +34,10 @@
             this.zoomout = new System.Windows.Forms.Button();
             this.zoomin = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.untenlinksregelbutton = new System.Windows.Forms.Button();
-            this.untenrechtsregelbutton = new System.Windows.Forms.Button();
-            this.rechtsobenbutton = new System.Windows.Forms.Button();
             this.rechtsuntenbutton = new System.Windows.Forms.Button();
+            this.rechtsobenbutton = new System.Windows.Forms.Button();
+            this.untenrechtsregelbutton = new System.Windows.Forms.Button();
+            this.untenlinksregelbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -47,7 +47,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(450, 367);
+            this.pictureBox1.Size = new System.Drawing.Size(666, 525);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -58,7 +58,7 @@
             this.panel1.Controls.Add(this.resetbutton);
             this.panel1.Controls.Add(this.zoomout);
             this.panel1.Controls.Add(this.zoomin);
-            this.panel1.Location = new System.Drawing.Point(12, 416);
+            this.panel1.Location = new System.Drawing.Point(12, 572);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 55);
             this.panel1.TabIndex = 1;
@@ -104,42 +104,12 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(505, 453);
+            this.panel2.Size = new System.Drawing.Size(718, 639);
             this.panel2.TabIndex = 2;
-            // 
-            // untenlinksregelbutton
-            // 
-            this.untenlinksregelbutton.Location = new System.Drawing.Point(12, 385);
-            this.untenlinksregelbutton.Name = "untenlinksregelbutton";
-            this.untenlinksregelbutton.Size = new System.Drawing.Size(75, 23);
-            this.untenlinksregelbutton.TabIndex = 4;
-            this.untenlinksregelbutton.Text = "<-";
-            this.untenlinksregelbutton.UseVisualStyleBackColor = true;
-            this.untenlinksregelbutton.Click += new System.EventHandler(this.untenlinksregelbutton_Click);
-            // 
-            // untenrechtsregelbutton
-            // 
-            this.untenrechtsregelbutton.Location = new System.Drawing.Point(93, 385);
-            this.untenrechtsregelbutton.Name = "untenrechtsregelbutton";
-            this.untenrechtsregelbutton.Size = new System.Drawing.Size(75, 23);
-            this.untenrechtsregelbutton.TabIndex = 5;
-            this.untenrechtsregelbutton.Text = "->";
-            this.untenrechtsregelbutton.UseVisualStyleBackColor = true;
-            this.untenrechtsregelbutton.Click += new System.EventHandler(this.untenrechtsregelbutton_Click);
-            // 
-            // rechtsobenbutton
-            // 
-            this.rechtsobenbutton.Location = new System.Drawing.Point(468, 12);
-            this.rechtsobenbutton.Name = "rechtsobenbutton";
-            this.rechtsobenbutton.Size = new System.Drawing.Size(22, 62);
-            this.rechtsobenbutton.TabIndex = 6;
-            this.rechtsobenbutton.Text = "^|";
-            this.rechtsobenbutton.UseVisualStyleBackColor = true;
-            this.rechtsobenbutton.Click += new System.EventHandler(this.rechtsobenbutton_Click);
             // 
             // rechtsuntenbutton
             // 
-            this.rechtsuntenbutton.Location = new System.Drawing.Point(468, 80);
+            this.rechtsuntenbutton.Location = new System.Drawing.Point(684, 127);
             this.rechtsuntenbutton.Name = "rechtsuntenbutton";
             this.rechtsuntenbutton.Size = new System.Drawing.Size(22, 62);
             this.rechtsuntenbutton.TabIndex = 7;
@@ -147,11 +117,41 @@
             this.rechtsuntenbutton.UseVisualStyleBackColor = true;
             this.rechtsuntenbutton.Click += new System.EventHandler(this.rechtsuntenbutton_Click);
             // 
+            // rechtsobenbutton
+            // 
+            this.rechtsobenbutton.Location = new System.Drawing.Point(684, 50);
+            this.rechtsobenbutton.Name = "rechtsobenbutton";
+            this.rechtsobenbutton.Size = new System.Drawing.Size(22, 62);
+            this.rechtsobenbutton.TabIndex = 6;
+            this.rechtsobenbutton.Text = "^|";
+            this.rechtsobenbutton.UseVisualStyleBackColor = true;
+            this.rechtsobenbutton.Click += new System.EventHandler(this.rechtsobenbutton_Click);
+            // 
+            // untenrechtsregelbutton
+            // 
+            this.untenrechtsregelbutton.Location = new System.Drawing.Point(93, 543);
+            this.untenrechtsregelbutton.Name = "untenrechtsregelbutton";
+            this.untenrechtsregelbutton.Size = new System.Drawing.Size(75, 23);
+            this.untenrechtsregelbutton.TabIndex = 5;
+            this.untenrechtsregelbutton.Text = "->";
+            this.untenrechtsregelbutton.UseVisualStyleBackColor = true;
+            this.untenrechtsregelbutton.Click += new System.EventHandler(this.untenrechtsregelbutton_Click);
+            // 
+            // untenlinksregelbutton
+            // 
+            this.untenlinksregelbutton.Location = new System.Drawing.Point(12, 543);
+            this.untenlinksregelbutton.Name = "untenlinksregelbutton";
+            this.untenlinksregelbutton.Size = new System.Drawing.Size(75, 23);
+            this.untenlinksregelbutton.TabIndex = 4;
+            this.untenlinksregelbutton.Text = "<-";
+            this.untenlinksregelbutton.UseVisualStyleBackColor = true;
+            this.untenlinksregelbutton.Click += new System.EventHandler(this.untenlinksregelbutton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 453);
+            this.ClientSize = new System.Drawing.Size(718, 639);
             this.Controls.Add(this.panel2);
             this.Name = "Form1";
             this.Text = "Form1";

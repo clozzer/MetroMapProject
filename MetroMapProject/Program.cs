@@ -22,13 +22,23 @@ namespace MetroMapProject
         [STAThread]
         static void Main()
         {
-            randomtestgraph();
-            //testgraph();
+            //randomtestgraph();
+            //testgraph2();
             //saveGraph();
             //loadGraph();
 
+            //g1.metricalgorithm();
 
-            g1.far(10000, 10);
+            //g1.handleduplicate();
+
+            //g1.pred(5, 50, 150);
+            //g1.far(1000, 500, 500);
+
+            Gerade gerade = new Gerade(1, 1, 2, 3);
+            if(gerade.iscrossed(gerade))
+            {
+
+            }
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -53,6 +63,39 @@ namespace MetroMapProject
             g1.createKanten("C", "D", "1CD");
             g1.createKanten("B", "D", "1BD");
             g1.createKanten("D", "E", "1DE");
+
+            g1.createKanten("A", "B", "2AB");
+            g1.createKanten("C", "D", "2CD");
+            Console.WriteLine();
+        }
+
+        static void testgraph2()
+        {
+            g1 = new MetroMapProject.Graph();
+            g1.createKnoten(5, 5, "A");
+            g1.createKnoten(15, 45, "B");
+            g1.createKnoten(25, 25, "C");
+            g1.createKnoten(35, 25, "D");
+            g1.createKnoten(45, 35, "E");
+            g1.createKnoten(55, 45, "F");
+            g1.createKnoten(65, 55, "G");
+            g1.createKnoten(65, 45, "H");
+            g1.createKnoten(75, 45, "I");
+
+            Console.WriteLine();
+
+            g1.createKanten("A", "B", "1AB");
+            g1.createKanten("A", "C", "1AC");
+            g1.createKanten("C", "D", "1CD");
+            g1.createKanten("B", "D", "1BD");
+            g1.createKanten("D", "E", "1DE");
+            g1.createKanten("E", "F", "1EF");
+            g1.createKanten("F", "G", "1FG");
+            g1.createKanten("F", "H", "1FH");
+            g1.createKanten("H", "I", "1HI");
+
+            g1.createKanten("A", "G", "1AG");
+
             Console.WriteLine();
         }
         static void randomtestgraph()
@@ -71,6 +114,9 @@ namespace MetroMapProject
             g1.createKanten("C", "D", "1CD");
             g1.createKanten("B", "D", "1BD");
             g1.createKanten("D", "E", "1DE");
+
+            g1.createKanten("A", "B", "2AB");
+            g1.createKanten("C", "D", "2CD");
             Console.WriteLine();
         }
 

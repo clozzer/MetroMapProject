@@ -43,7 +43,7 @@ namespace MetroMapProject
                 int x = knoten.getx();
                 int y = knoten.gety();
               
-                graphic.FillEllipse(sbBlack, x - 5 , y - 5, 10, 10);
+                graphic.FillEllipse(sbBlack, x - 4 , y - 4, 8, 8);
 
                 Console.WriteLine("Knoten: " + knotenname + " " + x + " " + y + " wurde gezeichnet");
             }
