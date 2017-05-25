@@ -36,22 +36,36 @@ namespace MetroMapProject
             Pen blackPen = new Pen(Color.Black);
             blackPen.Width = 1;
             SolidBrush sbBlack = new SolidBrush(Color.Black);
+            SolidBrush sbred = new SolidBrush(Color.Red);
 
             foreach (Knoten knoten in g1.getknoten())
             {
-                string knotenname = knoten.getname();
-                int x = knoten.getx();
-                int y = knoten.gety();
-              
-                graphic.FillEllipse(sbBlack, x - 4 , y - 4, 8, 8);
+                if(!knoten.ismoveable())
+                {
+                    string knotenname = knoten.getname();
+                    int x = knoten.getx();
+                    int y = knoten.gety();
 
-                Console.WriteLine("Knoten: " + knotenname + " " + x + " " + y + " wurde gezeichnet");
+                    graphic.FillEllipse(sbred, x - 6, y - 6, 12, 12);
+
+                    Console.WriteLine("Knoten: " + knotenname + " " + x + " " + y + " wurde gezeichnet");
+                }
+                else
+                {
+                    string knotenname = knoten.getname();
+                    int x = knoten.getx();
+                    int y = knoten.gety();
+
+                    graphic.FillEllipse(sbBlack, x - 4, y - 4, 8, 8);
+
+                    Console.WriteLine("Knoten: " + knotenname + " " + x + " " + y + " wurde gezeichnet");
+                }
+
             }
             Console.WriteLine();
 
             foreach(Kante kante in g1.getkanten())
             {
-                string kantenname = kante.getid();
                 int x1 = kante.getstart().getx();
                 int y1 = kante.getstart().gety();
 
@@ -60,7 +74,7 @@ namespace MetroMapProject
 
                 graphic.DrawLine(blackPen, x1, y1, x2, y2);
 
-                Console.WriteLine("Kante: " + kantenname + " von " + x1 + " " + y1 + " nach " + x2 + " " + y2 + " wurde gezeichnet");
+                Console.WriteLine("Kante: " + " von " + x1 + " " + y1 + " nach " + x2 + " " + y2 + " wurde gezeichnet");
             }
             Console.WriteLine();
             //Console.WriteLine(graphic.Transform.OffsetX);

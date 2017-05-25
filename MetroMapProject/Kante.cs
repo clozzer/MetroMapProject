@@ -10,12 +10,10 @@ namespace MetroMapProject
     public class Kante
     {
         Knoten start, ende;
-        string id;
-        public Kante(Knoten start, Knoten ende, string id)
+        public Kante(Knoten start, Knoten ende)
         {
             this.start = start;
             this.ende = ende;
-            this.id = id;
         }
         public Knoten getstart()
         {
@@ -32,10 +30,6 @@ namespace MetroMapProject
         public void getende(Knoten ende)
         {
             this.ende = ende;
-        }
-        public string getid()
-        {
-            return id;
         }
     }
 }
