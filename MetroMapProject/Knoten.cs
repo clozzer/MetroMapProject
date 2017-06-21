@@ -11,23 +11,39 @@ namespace MetroMapProject
     public class Knoten
     {
         int x, y;
+        int xalt, yalt;
+
         string name;
         bool moveable;
+        bool moveablereingold;
         List<Knoten> unmoveable = new List<Knoten>();
 
         Vector disp, pos;
 
         public Knoten(int x, int y, string name)
         {
+            xalt = x;
+            yalt = y;
             this.x = x;
             this.y = y;
             disp = new Vector(0, 0);
             pos = new Vector(x, y);
             this.name = name;
             moveable = true;
+            moveablereingold = true;
         }
-
-
+        public int getxalt()
+        {
+            return xalt;
+        }
+        public int getyalt()
+        {
+            return yalt;
+        }
+        public void setmovable()
+        {
+            moveablereingold = false;
+        }
         public List<Knoten> getunmoveable()
         {
             return unmoveable;
@@ -44,11 +60,16 @@ namespace MetroMapProject
             pos = new Vector(x, y);
             this.name = name;
             this.moveable = moveable;
+            this.moveablereingold = moveable;
         }
 
         public bool ismoveable()
         {
             return moveable;
+        }
+        public bool ismoveablereingold()
+        {
+            return moveablereingold;
         }
 
         public int getx()

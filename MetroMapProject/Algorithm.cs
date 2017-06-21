@@ -80,7 +80,7 @@ namespace MetroMapProject
 
         public float functionanziehend(float value, float width, float length)
         {
-            return (value * value) / optimaldistance(area(width, length));
+            return (value * value) / (optimaldistance(area(width, length)));
         }
 
         public void far(int iterations, int width, int length)
@@ -134,7 +134,7 @@ namespace MetroMapProject
 
         public float abstoßendamknoten(float anzahl, float width, float length)
         {
-            return (optimaldistance(area(width, length)) * optimaldistance(area(width, length))) / 10;
+            return (optimaldistance(area(width, length)) * optimaldistance(area(width, length)));
         }
 
 
@@ -174,7 +174,7 @@ namespace MetroMapProject
                                     Vector p = v.getpos() - u.getpos();
                                     Vector normalized = p;
                                     normalized.Normalize();
-                                    v.setdisp(v.getdisp() + (normalized) * functionabstoßend((float)p.Length, width, length));
+                                    v.setdisp(v.getdisp() + (normalized) * (functionabstoßend((float)p.Length, width, length) * 0.5));
                                 }
                             }
                         }
@@ -184,24 +184,28 @@ namespace MetroMapProject
 
                 //anziehendeKraft
                 //anziehende Knoten finden
-                foreach(Knoten v in knoten)
+                foreach (Knoten v in knoten)
                 {
-                    if(v.getunmoveable().Count != 0)
+                    if (v.getunmoveable().Count != 0)
                     {
-                        foreach(Knoten u in knoten)
+                        foreach (Knoten u in knoten)
                         {
-                            if(u.getunmoveable().Count != 0 && v != u && v.getunmoveable()[0] != u.getunmoveable()[0])
+                            if (u.getunmoveable().Count != 0 && v != u && v.getunmoveable()[0] != u.getunmoveable()[0])
                             {
-                                Console.WriteLine("knoten v: " + v.getname() + " und Knoten u: " + u.getname());
-
-                                //if (streckeab(v,u))
-                                //{
-                                //
-                                //}
+                                if (streckeab(v, u))
+                                {
+                                    //Console.WriteLine("knoten v: " + v.getname() + " und Knoten u: " + u.getname());
+                                    Vector p = u.getpos() - v.getpos();
+                                    Vector normalized = p;
+                                    normalized.Normalize();
+                                    u.setdisp(u.getdisp() - (normalized) * (functionanziehend((float)p.Length, width, length) * 0.02));
+                                    v.setdisp(v.getdisp() + (normalized) * (functionanziehend((float)p.Length, width, length) * 0.02));
+                                }
                             }
                         }
                     }
                 }
+
 
 
                 //knoten bewegen
@@ -212,7 +216,7 @@ namespace MetroMapProject
                         Vector normalized = v.getdisp();
                         normalized.Normalize();
 
-                        if (!double.IsNaN(normalized.Length))
+                        if (!double.IsNaN(normalized.Length) && v.getunmoveable().Count > 0)
                         {
 
                             Vector ziel = v.getpos() + v.getdisp();
@@ -221,7 +225,7 @@ namespace MetroMapProject
                             v.setx((int)v.getpos().X);
                             v.sety((int)v.getpos().Y);
 
-                            while (eucliddistance(v, v.getunmoveable()[0]) < optimaldistance(width *  length))
+                            while (eucliddistance(v, v.getunmoveable()[0]) < optimaldistance(width * length))
                             {
                                 Vector tempnormalized = starttoziel;
                                 tempnormalized.Normalize();
@@ -230,52 +234,99 @@ namespace MetroMapProject
                                 v.sety((int)v.getpos().Y);
                             }
                         }
+                        if (!double.IsNaN(normalized.Length) && v.getunmoveable().Count == 0)
+                        {
+                            v.setpos(v.getpos() + (normalized));
+                            v.setx((int)v.getpos().X);
+                            v.sety((int)v.getpos().Y);
+                        }
+                    }
+                }
+            }
+
+            foreach (Knoten v in knoten)
+            {
+                if (v.getunmoveable().Count != 0)
+                {
+                    foreach (Knoten u in knoten)
+                    {
+                        if (u.getunmoveable().Count != 0 && v != u && v.getunmoveable()[0] != u.getunmoveable()[0])
+                        {
+                            v.setmovable();
+                            u.setmovable();
+                        }
                     }
                 }
             }
         }
 
-        
+        //strecke zwischen a und b checken, Knoten v is hilfe 
+        //erster schritt
         public bool streckeab(Knoten a, Knoten b)
         {
-            if (!a.ismoveable() || !b.ismoveable())
-            {
-                Console.WriteLine("Test");
-                return false;
-            }
             if(a == b)
             {
-                Console.WriteLine("Test2");
                 return true;
-                
+            }
+            foreach (Kante e in kanten)
+            {
+                if(e.getstart() == a && e.getende() == b)
+                {
+                    return true;
+                }
+                if(e.getstart() == b && e.getende() == a)
+                {
+                    return true;
+                }
             }
             foreach(Kante e in kanten)
             {
-                if(a.getunmoveable().Count > 0)
+                if(e.getstart() == a && e.getende().ismoveable())
                 {
-                    if (e.getstart() == a && a.getunmoveable()[0] != e.getende())
-                    {
-                        return streckeab(e.getende(), b);
-                    }
-                    if (e.getende() == a && a.getunmoveable()[0] != e.getstart())
-                    {
-                        return streckeab(e.getstart(), b);
-                    }
+                    return streckeab(e.getende(), b, a);
                 }
-                else
+                if (e.getende() == a && e.getstart().ismoveable())
                 {
-                    if (e.getstart() == a)
-                    {
-                        return streckeab(e.getende(), b);
-                    }
-                    if (e.getende() == a)
-                    {
-                        return streckeab(e.getstart(), b);
-                    }
+                    return streckeab(e.getstart(), b, a);
                 }
-
             }
-            Console.WriteLine("Test3");
+
+            return false;
+        }
+
+
+        public bool streckeab(Knoten a, Knoten b, Knoten v)
+        {
+            if(!a.ismoveable())
+            {
+                return false;
+            }
+            foreach (Kante e in kanten)
+            {
+                if (e.getstart() == a && e.getende() == b)
+                {
+                    return true;
+                }
+                if (e.getstart() == b && e.getende() == a)
+                {
+                    return true;
+                }
+            }
+
+
+            foreach (Kante e in kanten)
+            {
+                if (e.getstart() == a && e.getende() != v)
+                {
+                    return streckeab(e.getende(), b, a);
+                }
+                if (e.getende() == a && e.getstart() != v)
+                {
+                    return streckeab(e.getstart(), b, a);
+                }
+            }
+
+
             return false;
         }
     }

@@ -47,7 +47,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(666, 525);
+            this.pictureBox1.Size = new System.Drawing.Size(916, 629);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -58,7 +58,7 @@
             this.panel1.Controls.Add(this.resetbutton);
             this.panel1.Controls.Add(this.zoomout);
             this.panel1.Controls.Add(this.zoomin);
-            this.panel1.Location = new System.Drawing.Point(12, 572);
+            this.panel1.Location = new System.Drawing.Point(12, 676);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 55);
             this.panel1.TabIndex = 1;
@@ -104,12 +104,12 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(718, 639);
+            this.panel2.Size = new System.Drawing.Size(968, 743);
             this.panel2.TabIndex = 2;
             // 
             // rechtsuntenbutton
             // 
-            this.rechtsuntenbutton.Location = new System.Drawing.Point(684, 127);
+            this.rechtsuntenbutton.Location = new System.Drawing.Point(934, 185);
             this.rechtsuntenbutton.Name = "rechtsuntenbutton";
             this.rechtsuntenbutton.Size = new System.Drawing.Size(22, 62);
             this.rechtsuntenbutton.TabIndex = 7;
@@ -119,7 +119,7 @@
             // 
             // rechtsobenbutton
             // 
-            this.rechtsobenbutton.Location = new System.Drawing.Point(684, 50);
+            this.rechtsobenbutton.Location = new System.Drawing.Point(934, 77);
             this.rechtsobenbutton.Name = "rechtsobenbutton";
             this.rechtsobenbutton.Size = new System.Drawing.Size(22, 62);
             this.rechtsobenbutton.TabIndex = 6;
@@ -129,7 +129,7 @@
             // 
             // untenrechtsregelbutton
             // 
-            this.untenrechtsregelbutton.Location = new System.Drawing.Point(93, 543);
+            this.untenrechtsregelbutton.Location = new System.Drawing.Point(93, 647);
             this.untenrechtsregelbutton.Name = "untenrechtsregelbutton";
             this.untenrechtsregelbutton.Size = new System.Drawing.Size(75, 23);
             this.untenrechtsregelbutton.TabIndex = 5;
@@ -139,7 +139,7 @@
             // 
             // untenlinksregelbutton
             // 
-            this.untenlinksregelbutton.Location = new System.Drawing.Point(12, 543);
+            this.untenlinksregelbutton.Location = new System.Drawing.Point(12, 647);
             this.untenlinksregelbutton.Name = "untenlinksregelbutton";
             this.untenlinksregelbutton.Size = new System.Drawing.Size(75, 23);
             this.untenlinksregelbutton.TabIndex = 4;
@@ -151,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 639);
+            this.ClientSize = new System.Drawing.Size(968, 743);
             this.Controls.Add(this.panel2);
             this.Name = "Form1";
             this.Text = "Form1";

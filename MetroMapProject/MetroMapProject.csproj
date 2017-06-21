@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="Gerade.cs" />
     <Compile Include="Graph1.cs" />
+    <Compile Include="KamadaKawai.cs" />
     <Compile Include="Kante.cs" />
     <Compile Include="Knoten.cs" />
     <Compile Include="Program.cs" />
