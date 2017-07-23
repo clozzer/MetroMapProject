@@ -5,34 +5,6 @@
 \chapter{Spring-Algorithmus}
 \label{Kapitel 2}
 %
-In diesem Kapitel werden die Grundlagen des Spring-Algorithmus erklärt. 
-Es geht um die Verwendung dieser Algorithmen, das grundsätzliche Vorgehen
-und die Erweiterbarkeit.
-
-
-
-\section{Spring-Algorithmus - Einleitung und Verwendung}
-\label{Kapitel_2_-_Unterkapitel_1}
-%
-Das Problem der Darstellung eines Graphen existiert schon sehr
-lange. Es basiert auf der Platzierung der Kanten sowie
-Knoten um eine möglichst ästhetische Zeichnung des
-Graphen zu erhalten, die gut lesbar und verständlich ist. ([3] Seite 2-3 )
-Um dies zu erreichen gibt es verschiedenste Ansätze. Im 
-Folgenden wird es um ein Verfahren gehen, welches auf ein Modell
-der Physik zurückgreift. 
-
-Verschiedenste Partikel ziehen sich an oder stoßen sich ab. Man 
-kann sich diese anziehende und abstoßende Kraft als eine Feder
-vorstellen. Existiert eine anziehende Kraft zwischen den Partikel so
-ist diese Feder gespannt, bei einer abstoßenden Kraft belastet. 
-Nimmt man sich diese Modell zugrunde, so stehen die Partikel
-für Knoten und die Federn für Kanten. Diese richten 
-sich anhand ihrer Kraft solange aus, bis keine weitere Energie 
-mehr im System ist. ([4] Seite 1130 ff.) Das führt zu einer ästhetischen
-Zeichnung des Graphen. In der Abbildung 2.1 wird dieser Prozess einmal
-dargestellt.
-
     \begin{figure}[t]
     	\centering
     	{\includegraphics[scale=0.8]{bilder/graphfeder}\label{fig_graphfeder}
@@ -40,84 +12,123 @@ dargestellt.
     	\caption[Darstellung der Kanten als Federn]{Darstellung der Kanten als Federn}
     	\label{fig_testbild2}
     \end{figure}
+In diesem Kapitel werden die Grundlagen des Spring-Algorithmus erklärt. 
+Es geht um die Verwendung dieser Algorithmen, das grundsätzliche Vorgehen
+und die Erweiterbarkeit.
+
+
+Das Problem der Darstellung basiert auf der Platzierung der Kanten sowie
+Knoten um eine möglichst ästhetische Zeichnung des
+Graphen zu erhalten, die gut lesbar und verständlich ist. Die grundlegenden Kriterien für eine ästhetischen Zeichnung eines Graphen sind:
+\begin{enumerate}
+	\item die Knoten sollten gleichmäßig verteilt werden
+	\item minimale Überschneidung der Kanten
+	\item einheitliche Länge der Kanten
+	\item möglichst symmetrisch
+	\item alles soll sich innerhalb der Fläche befinden[3].
+\end{enumerate}   
+
+Das heißt es ist leicht möglich
+die wichtigen Informationen des Graphen anhand einer visuellen Darstellung zu erhalten. 
+Dazu gehören unter anderem die Erkennung von Verbindungen zwischen Knoten oder deren Lage. Dies
+ist vor allem wichtig bei einer MetroMap wo es darum geht schnell herauszufinden wie es möglich ist
+von einem Punkt zu einem anderen zu kommen.
+Um dies zu erreichen gibt es verschiedenste Ansätze.
+
+Im Folgenden wird es um ein Verfahren gehen, welches auf ein Modell
+der Physik basiert, indem Stahlkugeln für die Knoten, und Federn für die Kanten stehen. Durch die 
+Federn wirken Kräfte auf die Kugeln ein, wodurch sich diese verschieben. Dies passiert solange, 
+bis die Federn ihre optimale Länge haben. Die optimale Länge $k$ wird durch die Anzahl der Knoten sowie
+der zur Verfügung stehender Fläche $A$ bestimmt:
+
+    \begin{align}
+    	k =
+    	\sqrt{A / |V|}
+    \end{align}
+    
+    \begin{align}
+    	A =
+    	W * L.
+    \end{align}
+
+$W$ ist die Weite und $L$ die Länge der zugrunde liegenden Oberfläche, auf der, der Graph gezeichnet wird. Es ist
+wichtig zu wissen wie diese Maße sind um eine bessere Verteilung der Knoten zu ermöglichen. 
+
+Bildet die bisherige 
+Platzierung der Kanten und Knoten einen planaren Graphen, so wird die neue die Platzierung in fast allen Fällen
+auch planar sein. Ein Graph ist planar wenn sich keine Kanten überschneiden, diese Eigenschaft ist besonders gewollt um den resultierenden Graphen noch übersichtlicher zu gestalten.
 
 
 
-\section{Spring-Algorithmus - Pseudocode}
+
+
+\section{Spring-Algorithmus - Vorgehen}
 \label{Kapitel_2_-_Unterkapitel_2}
 %
 
-Zwischen jedem Knotenpaar wird eine abstoßende Kraft \begin{math} f\textsubscript r \end{math} berechnet. Alle
-benachbarten Knoten erhalten eine anziehende Kraft \begin{math} f\textsubscript a \end{math}. Zwei Knoten \begin{math} u,v \in V \end{math}sind benachbart wenn \begin{math} uv \in E \end{math} ist. Das führt dazu, dass verbundene Knoten näher zusammen
+\begin{algorithm}[t]
+	\centering
+	\caption[Ein Algorithmus]{Fruchterman und Reingolds Algorithmus} \label{algo_1}
+	\begin{algorithmic}
+		\REQUIRE \begin{math} G:= (V,E) \end{math}
+		\ENSURE \begin{math} G:= (V,E) \end{math}
+		\FOR{\begin{math}i:=1 \leq iterations \end{math}}
+		\FOR{\begin{math}v_{i} \in V\end{math}}
+		\STATE $d_{v_{i}} := 0;$
+		\FOR{(\begin{math}v_{j} \in V\end{math})}
+		\IF{$v_{i}\neq v_{j}$}
+		\STATE $\Delta := p_{v_{i}} - p_{v_{j}};$
+		\STATE $d_{v_{i}} := d_{v_{i}} + (\Delta / |\Delta|) \cdot f^{r}_{v_{i},v_{j}}(|\Delta|));$
+		\ENDIF
+		\ENDFOR
+		\ENDFOR
+		\newline
+		\FOR{\begin{math}e_{v_{i},v_{j}} \in E\end{math}}
+		\STATE $\Delta := p_{v_{i}} - p_{v_{j}};$
+		\STATE $d_{v_{i}} := d_{v_{i}} - (\Delta / |\Delta|) \cdot f^{a}_{v_{i},v_{j}}(|\Delta|));$
+		\STATE $d_{v_{j}} := d_{v_{j}} + (\Delta / |\Delta|) \cdot f^{a}_{v_{i},v_{j}}(|\Delta|));$
+		\ENDFOR
+		\newline
+		\FOR{\begin{math}v_{i} \in V\end{math}}
+		\STATE $p_{v_{i}} := p_{v_{i}} + ( d_{v_{i}}/ |d_{v_{i}}|) \cdot min ( d_{v_{i}}, t );$
+		\STATE $p_{v_{i}}^{(x)} := min(W/2, max(-W/2, p_{v_{i}}^{(x)}));$
+		\STATE $p_{v_{i}}^{(y)} := min(L/2, max(-L/2, p_{v_{i}}^{(y)}))$
+		\ENDFOR
+		\STATE $t:= cool(t)$
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
+
+Zwischen jedem Knotenpaar $v_{i},v_{j} \in V$ wird eine abstoßende Kraft \begin{math} f^{r}_{v_{i},v_{j}}  \end{math} berechnet.   Alle
+benachbarten Knoten erhalten eine anziehende Kraft \begin{math} f^{a}_{v_{i},v_{j}} \end{math}. Zwei Knoten \begin{math} v_{i},v_{j} \in V \end{math}sind benachbart wenn \begin{math} e_{v_{i},v_{j}} \in E \end{math} ist. Das führt dazu, dass verbundene Knoten näher zusammen
 gezeichnet werden, während sie noch immer einen gewissen Abstand zueinander
 haben. Der Algorithmus geht dabei in drei Schritten vor:
 
 \begin{enumerate}
 	\item zwischen jedem Knotenpaar die abstoßende Kraft berechnen
 	\item benachbarten Knoten eine anziehende Kraft zuweisen
-	\item jeden Knoten seiner neuen Kraft nach bewegen
+	\item jeden Knoten seiner neuen Kraft nach bewegen.
 \end{enumerate} 
-Diese drei Schritte werden werden so oft wiederholt bis das System keine
-übrige Energie mehr hat und sich kein Knoten mehr bewegt.
-
-    \begin{algorithm}[t]
-    	\centering
-    	\caption[Ein Algorithmus]{Fruchterman und Reingolds Algorithmus} \label{algo_1}
-    	\begin{algorithmic}
-    		\REQUIRE \begin{math} G:= (V,E) \end{math}
-    		\ENSURE \begin{math} G:= (V,E) \end{math} mit besserer Positionierung
-    		\FOR{\begin{math}i:=1 \leq iterations \end{math}}
-    		\FOR{\begin{math}v \end{math} \textbf{in} \begin{math}V\end{math}}
-    		\STATE $v.disp := 0;$
-    		\FOR{(\begin{math}u \end{math} \textbf{in} \begin{math}V\end{math})}
-    		\IF{$u\neq v$}
-    		\STATE $\Delta := v.pos - u.pos;$
-    		\STATE $v.disp := v.disp + (\Delta / |\Delta|) * f\textsubscript{r}(|\Delta|));$
-    		\ENDIF
-    		\ENDFOR
-    		\ENDFOR
-    		\newline
-    		\FOR{\begin{math}e \end{math} \textbf{in} \begin{math}E\end{math}}
-    		\STATE $\Delta := e.v.pos - e.u.pos;$
-    		\STATE $e.v.disp := e.v.disp - (\Delta / |\Delta|) * f\textsubscript{a}(|\Delta|));$
-    		\STATE $e.u.disp := e.u.disp + (\Delta / |\Delta|) * f\textsubscript{a}(|\Delta|));$
-    		\ENDFOR
-    		\newline
-    		\FOR{\begin{math}v \end{math} \textbf{in} \begin{math}V\end{math}}
-    		\STATE $v.pos := v.pos + ( v. disp/ |v.disp|) * min ( v.disp, t );$
-    		\STATE $v.pos.x := min(W/2, max(-W/2, v.pos.x));$
-    		\STATE $v.pos.y := min(L/2, max(–L/2, v.pos.y))$
-    		\ENDFOR
-    		\ENDFOR
-    	\end{algorithmic}
-    \end{algorithm}
-
-Fruchterman und Reingold haben ihre Funktionen \begin{math} f\textsubscript r \end{math} und \begin{math} f\textsubscript a \end{math} aus ihrer Arbeit 1984 wie folgt definiert:
+Diese drei Schritte werden werden so oft wiederholt bis keine weitere Bewegung mehr stattfindet.
+Die Funktionen \begin{math} f^{a}_{v_{i},v_{j}} \end{math} und \begin{math} f^{r}_{v_{i},v_{j}} \end{math} sind wie folgt definiert:
 
    
 	\begin{align*}
-		f\textsubscript a (d) =
-			d^{2}/k
+		f^{a}_{v_{i},v_{j}} (x) =
+			x^{2}/k
 	\end{align*}
     
     \begin{align}
-		f\textsubscript r (d) =
-		-k^{2}/d
+		f^{r}_{v_{i},v_{j}} (x) =
+		-k^{2}/x.
     \end{align}
+    
+Der Vektor $d_{v_{i}}$ gibt an in welcher Richtung man den Knoten $v_{i}$ bewegen möchte. Während der Vektor $p_{v_{i}}$ auf die momentane Position des Knoten $v_{i}$ zeigt. Der Vektor $\Delta$ ist die Differenz zwischen $p_{v_{i}}$ und $p_{v_{j}}$, der Richtungsvektor von $v_{i}$ nach $v_{j}$. Die Variable $iterations$ gibt die Anzahl der Durchläufe an. Bei jedem neuen Durchlauf wird der Vektor  $d_{v}$  eines jeden Knotens $v$ auf 0 gesetzt. Mit zwei For-Schleifen geht man jede Knotenkombination durch und berechnet die abstoßende Kraft $f^{r}_{v_{i},v_{j}}$ mithilfe der Länge des $\Delta$ Vektors. Anschließend wird der Bewegungsvektor auf den Einheitsvektor von $\Delta$ multipliziert mit der berechneten Kraft gesetzt. Dadurch drücken sich die Knoten direkt voneinander weg.
 
-während \begin{math} k \end{math} für die optimale Distanz zweier Knoten steht:
+Der zweite Schritt besteht darin die anziehenden Kräfte zwischen den benachbarten Knoten zu berechnen. Dazu wird jede Kante einmal durchgegangen und der Bewegungsvektor von jedem betroffenen Knoten wird wie bei der abstoßenden Kraft aufaddiert. 
 
-    \begin{align}
-    	k =
-    	\sqrt{Area / |V|}
-    \end{align}
+Im letzten Schritt des Algorithmus werden die Knoten nun in Richtung ihres Bewegungsvektors bewegt. Es wird darauf geachtet, dass die Knoten dabei nicht das Bild verlassen. Die Variable $t$ ermöglicht es, am Anfang viel Bewegung der Knoten zuzulassen und dies immer weiter einzuschränken, damit mit der Graph mit jeder Iteration feiner wird. Die Funktion $cool(t)$ regelt dabei wie weit sich jeder Knoten in der nächsten Iteration maximal bewegen darf.
 
-\begin{math} Area \end{math} ist die zur Verfügung stehende Fläche:
-
-    \begin{align}
-    Area =
-    W * L
-    \end{align}
   
 \section{Spring-Algorithmus - Erweiterbarkeit}
 \label{Kapitel_2_-_Unterkapitel_3}   

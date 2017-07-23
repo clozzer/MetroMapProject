@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.22)  7 JUL 2017 05:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.22)  23 JUL 2017 07:00
 entering extended mode
 **LS7-Abschlussarbeit.tex
 (LS7-Abschlussarbeit.tex
@@ -1016,14 +1016,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (LS7-Abschlussarbeit.aux (kapitel/titelseite.aux) (kapitel/notation.aux) (kapi
 tel/einleitung.aux)
-(kapitel/kapitel2.aux) (kapitel/kapitel3.aux
-
-LaTeX Warning: Label `algo_1' multiply defined.
-
-
-LaTeX Warning: Label `fig_testbild2' multiply defined.
-
-) (kapitel/anhang.aux))
+(kapitel/kapitel2.aux) (kapitel/kapitel3.aux) (kapitel/anhang.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 230.
 LaTeX Font Info:    ... okay on input line 230.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 230.
@@ -1040,7 +1033,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 230.
 LaTeX Font Info:    ... okay on input line 230.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 230.
 LaTeX Font Info:    ... okay on input line 230.
- (E:\Latex\MiktexInstall\tex\context\base\supp-pdf.mkii
+
+(E:\Latex\MiktexInstall\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count153
 \scratchdimen=\dimen163
@@ -1117,7 +1111,7 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count160
 Package scrhack Info: undefining \float@addtolists on input line 230.
  (kapitel/titelseite.tex
-<bilder/tud_logo_cmyk.pdf, id=66, 338.90414pt x 54.59576pt>
+<bilder/tud_logo_cmyk.pdf, id=62, 338.90414pt x 54.59576pt>
 File: bilder/tud_logo_cmyk.pdf Graphic file (type pdf)
 
 <use bilder/tud_logo_cmyk.pdf>
@@ -1127,7 +1121,7 @@ LaTeX Font Info:    Try loading font information for T1+aess on input line 14.
  (E:\Latex\MiktexInstall\tex\latex\ae\t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
-<bilder/fi_text.pdf, id=67, 255.95625pt x 18.0675pt>
+<bilder/fi_text.pdf, id=63, 255.95625pt x 18.0675pt>
 File: bilder/fi_text.pdf Graphic file (type pdf)
  <use bilder/fi_text.pdf>
 Package pdftex.def Info: bilder/fi_text.pdf used on input line 19.
@@ -1209,138 +1203,83 @@ l.235 \pagestyle{empty} \cleardoublepage
 
 ] (kapitel/einleitung.tex
 Kapitel 1.
-[3
+) [3
 
 
 
-])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-[5] [6
+] [4
 
 
 
 ] (kapitel/kapitel2.tex
 Kapitel 2.
-<bilder/graphfeder.png, id=152, 587.19376pt x 184.43906pt>
+<bilder/graphfeder.png, id=128, 587.19376pt x 184.43906pt>
 File: bilder/graphfeder.png Graphic file (type png)
 
 <use bilder/graphfeder.png>
-Package pdftex.def Info: bilder/graphfeder.png used on input line 38.
+Package pdftex.def Info: bilder/graphfeder.png used on input line 10.
 (pdftex.def)             Requested size: 469.75565pt x 147.55144pt.
 
-Overfull \hbox (42.9643pt too wide) in paragraph at lines 38--39
+Overfull \hbox (42.9643pt too wide) in paragraph at lines 10--11
  [][][][] 
  []
 
-[7
+[5
 
 
 
 ]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 65.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 89.
-
-
-Underfull \vbox (badness 1484) has occurred while \output is active []
-
- [8 <./bilder/graphfeder.png>]) [9] [10
-
-
-
-] (kapitel/kapitel3.tex
+put line 71.
+ [6 <./bilder/graphfeder.png>] [7]) [8] (kapitel/kapitel3.tex
 Kapitel 3.
-[11
+) [9
 
 
 
-] (E:\Latex\MiktexInstall\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-(E:\Latex\MiktexInstall\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-(E:\Latex\MiktexInstall\tex\latex\listings\lstmisc.sty
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 83.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 84.
 
-(E:\Latex\MiktexInstall\tex\latex\ae\t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
 
-LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 84.
 
-[12] <bilder/testbild.pdf, id=234, 179.03186pt x 126.69131pt>
-File: bilder/testbild.pdf Graphic file (type pdf)
-
-<use bilder/testbild.pdf>
-Package pdftex.def Info: bilder/testbild.pdf used on input line 147.
-(pdftex.def)             Requested size: 143.22568pt x 101.35318pt.
-File: bilder/testbild.pdf Graphic file (type pdf)
- <use bilder/testbild.pdf>
-Package pdftex.def Info: bilder/testbild.pdf used on input line 151.
-(pdftex.def)             Requested size: 143.22568pt x 101.35318pt.
-File: bilder/testbild.pdf Graphic file (type pdf)
- <use bilder/testbild.pdf>
-Package pdftex.def Info: bilder/testbild.pdf used on input line 154.
-(pdftex.def)             Requested size: 143.22568pt x 101.35318pt.
-File: bilder/testbild.pdf Graphic file (type pdf)
-
-<use bilder/testbild.pdf>
-Package pdftex.def Info: bilder/testbild.pdf used on input line 158.
-(pdftex.def)             Requested size: 143.22568pt x 101.35318pt.
-
-Underfull \vbox (badness 3039) has occurred while \output is active []
-
- [13]
-[14 <./bilder/testbild.pdf>]) [15] [16
+] [10
 
 
 
 ] (kapitel/anhang.tex
 Anhang A.
-) [17
+) [11
 
 
 
-] [18
+] [12
 
 
 
 ] (LS7-Abschlussarbeit.lof)
 \tf@lof=\write5
- [19] [20
+ [13] [14
 
 
 ] (LS7-Abschlussarbeit.loa)
 \tf@loa=\write6
 
-[21
+[15
 
 
-] [22
+] [16
 
 
 ] (LS7-Abschlussarbeit.lol)
 \tf@lol=\write7
- [23
+ [17
 
 
-] [24
+] [18
 
 
 ] (LS7-Abschlussarbeit.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 291.
 
-[25
+[19
 
 
 ]
@@ -1351,46 +1290,34 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 291.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 291.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 291.
 Package rerunfilecheck Info: File `LS7-Abschlussarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: E66DCF5A7C79C28575E1E7F6885963F9;1036.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 0FD00C5404822989760EF8746B022E10;940.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 291.
  ) 
 Here is how much of TeX's memory you used:
- 16021 strings out of 493698
- 236838 string characters out of 3146418
- 429075 words of memory out of 3000000
- 18811 multiletter control sequences out of 15000+200000
- 63497 words of font info for 136 fonts, out of 3000000 for 9000
+ 15454 strings out of 493698
+ 230639 string characters out of 3146418
+ 401829 words of memory out of 3000000
+ 18301 multiletter control sequences out of 15000+200000
+ 53347 words of font info for 111 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 63i,11n,124p,924b,1565s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
-st, replaced by a fixed one
-
-<E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/Latex/Mik
-texInstall/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/Latex/MiktexInstall/fo
-nts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/Latex/MiktexInstall/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Latex/Mi
-ktexInstall/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Latex/MiktexInstall/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb><E:/Latex/MiktexInstall/fonts/type1/publ
-ic/amsfonts/cm/cmr7.pfb><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/
-cmr8.pfb><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/cmss12.pfb><E:/
-Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/cmss17.pfb><E:/Latex/MiktexI
-nstall/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><E:/Latex/MiktexInstall/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><E:/Latex/MiktexInstall/fonts/type1/publi
-c/amsfonts/cm/cmti12.pfb><E:/Latex/MiktexInstall/fonts/type1/public/eurosym/fey
-mr10.pfb><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on LS7-Abschlussarbeit.pdf (29 pages, 317243 bytes).
+ 57i,12n,100p,924b,850s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/Latex/M
+iktexInstall/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/Latex/MiktexInstall/
+fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/Latex/MiktexInstall/fonts/type1/
+public/amsfonts/cm/cmex10.pfb><E:/Latex/MiktexInstall/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/cmmi6.p
+fb><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Latex/M
+iktexInstall/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Latex/MiktexInstall/f
+onts/type1/public/amsfonts/cm/cmr12.pfb><E:/Latex/MiktexInstall/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm
+/cmss12.pfb><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/cmss17.pfb><
+E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><E:/Latex/Mi
+ktexInstall/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Latex/MiktexInstall/f
+onts/type1/public/amsfonts/cm/cmti12.pfb><E:/Latex/MiktexInstall/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb>
+Output written on LS7-Abschlussarbeit.pdf (23 pages, 268144 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 307 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
