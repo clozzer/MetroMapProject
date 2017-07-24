@@ -1,6 +1,15 @@
 \select@language {german}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 1.1}{\ignorespaces Karte des deutschen H\IeC {\"o}chstspannungsnetzes}}{4}{figure.caption.3}
+\contentsline {figure}{\numberline {\relax 1.2}{\ignorespaces MetroMap der Bahnverbindungen in Singapur}}{4}{figure.caption.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Darstellung der Kanten als Federn}}{6}{figure.caption.3}
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Darstellung als Stahlkugeln und Federn eines Graphen}}{6}{figure.caption.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {rote Knoten sind die Stahlkugeln verbunden mit Federn}}}{6}{figure.caption.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {die Federn verschieben die Knoten}}}{6}{figure.caption.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {darstellung als Graph}}}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Wirkende Kr\IeC {\"a}fte im Graphen}}{8}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {anziehende Kraft $f^{a}$ zwischen dem dritten und vierten Knoten}}}{8}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {absto\IeC {\ss }ende Kraft $f^{r}$ zwischen dem ersten und vierten Knoten}}}{8}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {die wirkenden Kr\IeC {\"a}fte l\IeC {\"o}sen sich auf}}}{8}{figure.caption.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
