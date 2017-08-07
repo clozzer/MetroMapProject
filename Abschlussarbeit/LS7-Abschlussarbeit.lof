@@ -1,0 +1,21 @@
+\select@language {german}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 1.1}{\ignorespaces Karte des deutschen H\IeC {\"o}chstspannungsnetzes}}{4}{figure.caption.3}
+\contentsline {figure}{\numberline {\relax 1.2}{\ignorespaces MetroMap der Bahnverbindungen in Singapur}}{4}{figure.caption.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Karte des deutschen H\IeC {\"o}chstspannungsnetzes}}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Das schrittweise Vorgehen um einen repr\IeC {\"a}sentierenden Graphen zu erhalten}}{7}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ausschnit des deutschen H\IeC {\"o}chstspannungsnetzes. Die markierten Orte werden zu den Knoten und die Verbindungen werden zu den Kanten des Graphen.}}}{7}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Den Ausschnitt der Karte dann als Graphen mit jeweils nur einer Leitung.}}}{7}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Die zus\IeC {\"a}tzlichen Leitungen wurden neben dem eigentlichen Knoten hinzugef\IeC {\"u}gt. Hier jeweils immer genau drei.}}}{7}{figure.caption.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Darstellung als Stahlkugeln und Federn eines Graphen}}{10}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {rote Knoten sind die Stahlkugeln verbunden mit Federn}}}{10}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {die Federn verschieben die Knoten}}}{10}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {darstellung als Graph}}}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Wirkende Kr\IeC {\"a}fte im Graphen}}{12}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {anziehende Kraft $f^{a}$ zwischen dem dritten und vierten Knoten}}}{12}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {absto\IeC {\ss }ende Kraft $f^{r}$ zwischen dem ersten und vierten Knoten}}}{12}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {die wirkenden Kr\IeC {\"a}fte l\IeC {\"o}sen sich auf}}}{12}{figure.caption.8}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
