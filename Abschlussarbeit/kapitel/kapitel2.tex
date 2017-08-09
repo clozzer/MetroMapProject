@@ -6,32 +6,79 @@
 \label{Kapitel 2}
 %
 
+\section{Höchstspannungsnetz}
+\label{Höchstspannungsnetz}
+%
+\begin{figure}[t]
+	\centering
+	{\includegraphics[scale=0.9]{bilder/pds}\label{fig_pds}
+	}\\
+	\caption[Prinzip der Stromerzeugung]{Prinzip der Stromerzeugung[1]}
+	\label{fig_pds}
+\end{figure}
+\begin{figure}[t]
+	\centering
+	{\includegraphics[scale=0.5]{bilder/hochstspannungsnetz}\label{fig_hochstspannungsnetz}
+	}\\
+	\caption[Karte des deutschen Höchstspannungsnetzes]{Karte des deutschen Höchstspannungsnetzes}
+	\label{fig_hochstspannungsnetz2}
+\end{figure}
+Um elektrische Energie über große Distanzen zu transportieren werden Höchstspannungsnetze benutzt. Von einem Kraftwerk ausgehend wird versucht möglichst viele Haushalte, Industrie- und Gewerbebetriebe zu erreichen. Davon ausgehend wird auch der Standort der meisten Kraftwerke bestimmt. Einige Kraftwerke lassen sich nur an bestimmten Standorten errichten, zum Beispiel ein Wasserkraftwerk muss an einem Fluss oder Staudamm errichtet werden. So ist es oft nicht möglich genug Verbraucher zu erreichen, sodass es Mittel bedarf den elektrischen Strom auch über weite Strecken hinweg zu transportieren.
+
+Die Generatoren der modernen Kraftwerke erzeugen eine Spannung von $10500 V$, $21000V$ oder $27000V$[1]. Die Höhe dieser Spannung ist bestimmt durch die Größe bzw. die Leistungsfähigkeit des Kraftwerks und somit von der Nennleistung des Generators.
+
+Da der überwiegende Teil der elektrischen Energie in Wärmekraftwerken erzeugt wird und diese mit einer Generatorleistung von $600$ bis $1300MW$, bedeutet dies, dass Ströme zwischen $15000A$ und $30000A$ abgegeben werden müssen. Das ist jedoch weder aus technischen noch wirtschaftlichen Gründen für einen Transport über lange Distanzen lohnenswert, da es entweder sehr großen Leiterquerschnitte oder sehr große Stromverluste zur Folge hätte.
+
+Es kann die gleiche Leistung $P$ auch mit weniger Strom $I$ und einer erhöhten Spannung $U$ erreicht werden, denn die Beziehung lautet:
+
+\begin{align}
+	P = U \cdot I
+\end{align}  
+
+Diese Eigenschaft wird ausgenutzt und das führt dazu, dass die Generatorspannung bereits direkt am Kraftwerk durch einen Transformator in eine höhere Spannung umgeformt wird. Dadurch wird die elektrische Leistung mit kleineren Stromstärken über die Netze geleitet.
+
+
 
 \section{Graph}
 \label{Graph}
 %
-Ein Graph ist eine Struktur, die Informationen über zusammenhängende Objekte repräsentiert. Die jeweiligen Objekte werden Knoten und deren Verbindungen Kanten genannt. 
+Ein Graph ist eine Struktur, die Informationen über zusammenhängende Objekte repräsentiert. Die jeweiligen Objekte werden Knoten und deren Verbindungen Kanten genannt.
+Somit hat ein Graph eine Menge von Knoten und Kanten.
+\begin{lstlisting}[style=C++, caption=Struktur des Graphen]{Name}
+class Graph {
+List<Knoten> knoten;
+List<Kante> kanten;
+}
+\end{lstlisting}
+Ein Knoten besteht aus einem Koordinatenpaar $(x,y)$, welches definiert wo der Knoten liegt.
+\begin{lstlisting}[style=C++, caption=Struktur eines Knotens]{Name}
+class Knoten {
+int x,y;
+public Knoten(int x, int y)
+{	
+this.x = x;
+this.y = y;
+}	
+}
+\end{lstlisting}
+Die einzelnen Knoten werden über Kanten miteinander verbunden. Eine Kante speichert den Start- sowie Endknoten der Verbindung.
+\begin{lstlisting}[style=C++, caption=Struktur eines Knotens]{Name}
+class Knoten {
+int x,y;
+public Knoten(int x, int y)
+{	
+this.x = x;
+this.y = y;
+}	
+}
+\end{lstlisting}
+Neue Knoten und Kanten können in der Graph-Klasse mit der Funktion $createKnoten()$ und $createKante()$ hinzugefügt werden. Diese Funktionen erstellen einen neuen Knoten beziehungsweise Kante und fügen sie der jeweiligen Liste hinzu.
+
+Nun kann der Graph auf einer Oberfläche gezeichnet, indem erst die Knoten platziert werden anhand ihrer $x$ und $y$ Koordinate und anschließend die Kanten zwischen den jeweiligen Knoten. 
 
 
-
-\section{Höchstspannungsnetz}
-\label{Kapitel_2_-_Unterkapitel_1}
-%
-
-Um das weitere Vorgehen zu verstehen, ist es wichtig zu wissen wie ein Höchstspannungsnetz aufgebaut ist. Das Höchstspannungsnetz ist eine besondere Form des Stromnetzes. Um über größere Distanzen hinweg Strom verteilen zu können, ist es effektiver dies mit einer höheren Spannung zu tun, daher auch der Name. Denn je höher die verwendete elektrische Spannung, desto geringer ist die Verlustleistung. 
-
-Die Freileitungen führen über Hochspannungsmasten zu den verschiedenen Orten. Über einen Hochspannungsmast können mehrere Leiterseile verteilt werden. Ein Leiterseil dient der eigentlichen Stromübertragung.   
-
-
-    \begin{figure}[t]
-    	\centering
-    	{\includegraphics[scale=0.5]{bilder/hochstspannungsnetz}\label{fig_hochstspannungsnetz}
-    	}\\
-    	\caption[Karte des deutschen Höchstspannungsnetzes]{Karte des deutschen Höchstspannungsnetzes}
-    	\label{fig_hochstspannungsnetz2}
-    \end{figure}
-\section{Kapitel 2 - Unterkapitel 2}
-\label{Kapitel_2_-_Unterkapitel_2}
+\section{Vom Höchstspannungsnetz zum Graphen}
+\label{Vom Höchstspannungsnetz zum Graphen}
 %
 
 Es wurden zwei Schritte unternommen um aus dem Höchstspannungsnetz einen repräsentierenden Graphen zu bekommen. Zum einen wurden die jeweiligen Masten zu Knoten und jeweils eins ihrer Leiterseile zu einer verbindenden Kante. Die Position der Masten war aus einer Karte des Höchstspannungsnetz zu bekommen, ebenso deren Verbindungen. 
@@ -46,7 +93,7 @@ Die Städte und Orte werden dabei als unbewegliche Knoten angelegt damit der res
 	{\includegraphics[scale=0.8]{bilder/kartenausschnitt}\label{fig_kartenausschnitt}
 	}
 	\hspace{1.0cm}%
-	\subfigure[Den Ausschnitt der Karte dann als Graphen mit jeweils nur einer Leitung.]
+	\subfigure[Den Ausschnitt der Karte als Graphen mit jeweils nur einer Leitung.]
 	{\includegraphics[scale=0.4]{bilder/ausschnittgraph}\label{fig_ausschnittgraph}
 	}
 	\hspace{1.0cm}%

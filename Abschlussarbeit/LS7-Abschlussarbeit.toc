@@ -4,17 +4,17 @@
 \contentsline {section}{\numberline {1.1}Motivation und Hintergrund}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Aufbau der Arbeit}{3}{section.1.2}
 \contentsline {chapter}{\numberline {2}Vom H\IeC {\"o}chstspannungsnetz zum Graphen}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Graph}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}H\IeC {\"o}chstspannungsnetz}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Kapitel 2 - Unterkapitel 2}{5}{section.2.3}
-\contentsline {chapter}{\numberline {3}Spring-Algorithmus}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Spring-Algorithmus - Vorgehen}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}Spring-Algorithmus - Erweiterbarkeit}{12}{section.3.2}
-\contentsline {chapter}{\numberline {4}Das Kapitel 4}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Kapitel 4 - Unterkapitel 1}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Kapitel 4 - Unterkapitel 2}{15}{section.4.2}
-\contentsline {chapter}{\numberline {A}Weitere Informationen}{17}{appendix.A}
-\contentsline {chapter}{Abbildungsverzeichnis}{19}{appendix*.9}
-\contentsline {chapter}{Algorithmenverzeichnis}{21}{appendix*.10}
-\contentsline {chapter}{Quellcodeverzeichnis}{23}{appendix*.11}
-\contentsline {chapter}{Literaturverzeichnis}{25}{appendix*.11}
+\contentsline {section}{\numberline {2.1}H\IeC {\"o}chstspannungsnetz}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Graph}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Vom H\IeC {\"o}chstspannungsnetz zum Graphen}{8}{section.2.3}
+\contentsline {chapter}{\numberline {3}Spring-Algorithmus}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Spring-Algorithmus - Vorgehen}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Spring-Algorithmus - Erweiterbarkeit}{14}{section.3.2}
+\contentsline {chapter}{\numberline {4}Das Kapitel 4}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Kapitel 4 - Unterkapitel 1}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Kapitel 4 - Unterkapitel 2}{17}{section.4.2}
+\contentsline {chapter}{\numberline {A}Weitere Informationen}{19}{appendix.A}
+\contentsline {chapter}{Abbildungsverzeichnis}{21}{appendix*.10}
+\contentsline {chapter}{Algorithmenverzeichnis}{23}{appendix*.11}
+\contentsline {chapter}{Quellcodeverzeichnis}{25}{appendix*.12}
+\contentsline {chapter}{Literaturverzeichnis}{27}{appendix*.12}
