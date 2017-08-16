@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.22)  11 AUG 2017 02:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.22)  16 AUG 2017 02:45
 entering extended mode
 **LS7-Abschlussarbeit.tex
 (LS7-Abschlussarbeit.tex
@@ -1029,6 +1029,18 @@ LaTeX Warning: Label `fig_hochstspannungsnetz2' multiply defined.
 
 LaTeX Warning: Label `fig_europastromnetz' multiply defined.
 
+
+LaTeX Warning: Label `fig_erdseil' multiply defined.
+
+
+LaTeX Warning: Label `Graph' multiply defined.
+
+
+LaTeX Warning: Label `fig_einfachergraph' multiply defined.
+
+
+LaTeX Warning: Label `fig_testbild2' multiply defined.
+
 ) (kapitel/kapitel3.aux
 
 LaTeX Warning: Label `fig_testbild2' multiply defined.
@@ -1131,7 +1143,7 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count160
 Package scrhack Info: undefining \float@addtolists on input line 230.
  (kapitel/titelseite.tex
-<bilder/tud_logo_cmyk.pdf, id=78, 338.90414pt x 54.59576pt>
+<bilder/tud_logo_cmyk.pdf, id=82, 338.90414pt x 54.59576pt>
 File: bilder/tud_logo_cmyk.pdf Graphic file (type pdf)
 
 <use bilder/tud_logo_cmyk.pdf>
@@ -1141,7 +1153,7 @@ LaTeX Font Info:    Try loading font information for T1+aess on input line 14.
  (E:\Latex\MiktexInstall\tex\latex\ae\t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
-<bilder/fi_text.pdf, id=79, 255.95625pt x 18.0675pt>
+<bilder/fi_text.pdf, id=83, 255.95625pt x 18.0675pt>
 File: bilder/fi_text.pdf Graphic file (type pdf)
  <use bilder/fi_text.pdf>
 Package pdftex.def Info: bilder/fi_text.pdf used on input line 19.
@@ -1223,14 +1235,14 @@ l.235 \pagestyle{empty} \cleardoublepage
 
 ] (kapitel/einleitung.tex
 Kapitel 1.
-<bilder/hochstspannungsnetz.png, id=139, 561.59813pt x 746.03719pt>
+<bilder/hochstspannungsnetz.png, id=144, 561.59813pt x 746.03719pt>
 File: bilder/hochstspannungsnetz.png Graphic file (type png)
 
 <use bilder/hochstspannungsnetz.png>
 Package pdftex.def Info: bilder/hochstspannungsnetz.png used on input line 18.
 (pdftex.def)             Requested size: 280.79837pt x 373.01767pt.
 
-<bilder/metromapsinga.jpg, id=141, 552.0625pt x 317.185pt>
+<bilder/metromapsinga.jpg, id=146, 552.0625pt x 317.185pt>
 File: bilder/metromapsinga.jpg Graphic file (type jpg)
 
 <use bilder/metromapsinga.jpg>
@@ -1243,24 +1255,68 @@ Package pdftex.def Info: bilder/metromapsinga.jpg used on input line 25.
 ] [4 <./bilder/hochstspannungsnetz.png> <./bilder/metromapsinga.jpg>] (kapitel/
 kapitel2.tex
 Kapitel 2.
-<bilder/pds.jpg, id=156, 474.27188pt x 289.08pt>
+<bilder/pds.jpg, id=161, 474.27188pt x 289.08pt>
 File: bilder/pds.jpg Graphic file (type jpg)
  <use bilder/pds.jpg>
 Package pdftex.def Info: bilder/pds.jpg used on input line 14.
 (pdftex.def)             Requested size: 426.84074pt x 260.16959pt.
-File: bilder/hochstspannungsnetz.png Graphic file (type png)
 
+<bilder/nieder.jpg, id=162, 1194.4625pt x 853.1875pt>
+File: bilder/nieder.jpg Graphic file (type jpg)
+ <use bilder/nieder.jpg>
+Package pdftex.def Info: bilder/nieder.jpg used on input line 24.
+(pdftex.def)             Requested size: 179.16164pt x 127.9726pt.
+
+<bilder/mittelspannungsleiter.jpg, id=163, 451.6875pt x 602.25pt>
+File: bilder/mittelspannungsleiter.jpg Graphic file (type jpg)
+
+<use bilder/mittelspannungsleiter.jpg>
+Package pdftex.def Info: bilder/mittelspannungsleiter.jpg used on input line 28
+.
+(pdftex.def)             Requested size: 112.92159pt x 150.56212pt.
+
+<bilder/hochspannungsleitungen.jpg, id=164, 471.7625pt x 354.32375pt>
+File: bilder/hochspannungsleitungen.jpg Graphic file (type jpg)
+
+<use bilder/hochspannungsleitungen.jpg>
+Package pdftex.def Info: bilder/hochspannungsleitungen.jpg used on input line 3
+2.
+(pdftex.def)             Requested size: 141.52983pt x 106.29794pt.
+
+<bilder/Reptcheque_HT.jpg, id=165, 823.075pt x 419.5675pt>
+File: bilder/Reptcheque_HT.jpg Graphic file (type jpg)
+
+<use bilder/Reptcheque_HT.jpg>
+Package pdftex.def Info: bilder/Reptcheque_HT.jpg used on input line 36.
+(pdftex.def)             Requested size: 164.61208pt x 83.912pt.
+
+Underfull \hbox (badness 1533) in paragraph at lines 36--36
+[]\T1/aer/m/n/10 (d) mo-der-ni-sier-ter Höchst-span-nungs-
+ []
+
+File: bilder/hochstspannungsnetz.png Graphic file (type png)
 <use bilder/hochstspannungsnetz.png>
-Package pdftex.def Info: bilder/hochstspannungsnetz.png used on input line 21.
+Package pdftex.def Info: bilder/hochstspannungsnetz.png used on input line 48.
 (pdftex.def)             Requested size: 280.79837pt x 373.01767pt.
 
-<bilder/europastromnetz.jpg, id=157, 410.9754pt x 418.2024pt>
+<bilder/europastromnetz.jpg, id=166, 410.9754pt x 418.2024pt>
 File: bilder/europastromnetz.jpg Graphic file (type jpg)
 
 <use bilder/europastromnetz.jpg>
-Package pdftex.def Info: bilder/europastromnetz.jpg used on input line 28.
+Package pdftex.def Info: bilder/europastromnetz.jpg used on input line 55.
 (pdftex.def)             Requested size: 369.87444pt x 376.37868pt.
- [5
+
+<bilder/erdseil.jpg, id=167, 803.0pt x 542.025pt>
+File: bilder/erdseil.jpg Graphic file (type jpg)
+ <use bilder/erdseil.jpg>
+Package pdftex.def Info: bilder/erdseil.jpg used on input line 63.
+(pdftex.def)             Requested size: 401.49902pt x 271.01183pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+[5
 
 
 
@@ -1268,30 +1324,42 @@ Package pdftex.def Info: bilder/europastromnetz.jpg used on input line 28.
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 49.
-
-(E:\Latex\MiktexInstall\tex\latex\ae\omsaer.fd
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 84.
+ (E:\Latex\MiktexInstall\tex\latex\ae\omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
 
-Overfull \hbox (4.68858pt too wide) in paragraph at lines 55--56
+Overfull \hbox (4.68858pt too wide) in paragraph at lines 90--91
 []\T1/aer/m/n/12 In Deutsch-land wer-den die Höchst-span-nungs-lei-tun-gen mit 
 $\OT1/cmr/m/n/12 380000\OML/cmm/m/it/12 V$ \T1/aer/m/n/12 oder mit $\OT1/cmr/m/
 n/12 220000\OML/cmm/m/it/12 V$
  []
 
 [6 <./bilder/pds.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \vbox (badness 4266) has occurred while \output is active []
+Underfull \vbox (badness 2229) has occurred while \output is active []
 
- [7]
-[8 <./bilder/europastromnetz.jpg>]
+ [7 <./bilder/nieder.jpg> <./bilder/mittelspannungsleiter.jpg> <./bilder/hochsp
+annungsleitungen.jpg> <./bilder/Reptcheque_HT.jpg>] [8] [9 <./bilder/europastro
+mnetz.jpg>]
+[10 <./bilder/erdseil.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+<bilder/einfachergraph.jpg, id=203, 490.08093pt x 327.47343pt>
+File: bilder/einfachergraph.jpg Graphic file (type jpg)
+
+<use bilder/einfachergraph.jpg>
+Package pdftex.def Info: bilder/einfachergraph.jpg used on input line 141.
+(pdftex.def)             Requested size: 245.03987pt x 163.73631pt.
+
 (E:\Latex\MiktexInstall\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -1302,52 +1370,50 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 79.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 80.
+nput line 154.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 155.
+
 
 (E:\Latex\MiktexInstall\tex\latex\ae\t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 80.
+(Font)              using `T1/aett/m/n' instead on input line 155.
 
-[9]
-Overfull \hbox (16.14633pt too wide) in paragraph at lines 107--108
+[11]
+Overfull \hbox (16.14633pt too wide) in paragraph at lines 182--183
 \T1/aer/m/n/12 Neue Kno-ten und Kan-ten kön-nen in der Graph-Klasse mit der Fun
 k-ti-on $\OML/cmm/m/it/12 createKnoten\OT1/cmr/m/n/12 ()$
  []
 
-<bilder/kartenausschnitt.jpg, id=202, 196.48407pt x 163.3603pt>
+[12 <./bilder/einfachergraph.jpg>]
+<bilder/kartenausschnitt.jpg, id=238, 196.48407pt x 163.3603pt>
 File: bilder/kartenausschnitt.jpg Graphic file (type jpg)
 
 <use bilder/kartenausschnitt.jpg>
-Package pdftex.def Info: bilder/kartenausschnitt.jpg used on input line 126.
+Package pdftex.def Info: bilder/kartenausschnitt.jpg used on input line 201.
 (pdftex.def)             Requested size: 157.18745pt x 130.6884pt.
 
-<bilder/ausschnittgraph.jpg, id=203, 555.57562pt x 411.03563pt>
+<bilder/ausschnittgraph.jpg, id=239, 555.57562pt x 411.03563pt>
 File: bilder/ausschnittgraph.jpg Graphic file (type jpg)
 
 <use bilder/ausschnittgraph.jpg>
-Package pdftex.def Info: bilder/ausschnittgraph.jpg used on input line 130.
+Package pdftex.def Info: bilder/ausschnittgraph.jpg used on input line 205.
 (pdftex.def)             Requested size: 222.2263pt x 164.41133pt.
 
-<bilder/ausschnittfertigergraph.jpg, id=204, 570.63188pt x 413.29407pt>
+<bilder/ausschnittfertigergraph.jpg, id=240, 570.63188pt x 413.29407pt>
 File: bilder/ausschnittfertigergraph.jpg Graphic file (type jpg)
 
 <use bilder/ausschnittfertigergraph.jpg>
 Package pdftex.def Info: bilder/ausschnittfertigergraph.jpg used on input line 
-134.
+209.
 (pdftex.def)             Requested size: 228.2487pt x 165.31468pt.
-) [10] [11 <./bilder/kartenausschnitt.jpg> <./bilder/ausschnittgraph.jpg> <./bi
+) [13] [14 <./bilder/kartenausschnitt.jpg> <./bilder/ausschnittgraph.jpg> <./bi
 lder/ausschnittfertigergraph.jpg>]
-[12
-
-
-
-] (kapitel/kapitel3.tex
+(kapitel/kapitel3.tex
 Kapitel 3.
-<bilder/graphfederfirst.jpg, id=226, 195.73125pt x 176.15813pt>
+<bilder/graphfederfirst.jpg, id=253, 195.73125pt x 176.15813pt>
 File: bilder/graphfederfirst.jpg Graphic file (type jpg)
 
 <use bilder/graphfederfirst.jpg>
@@ -1358,14 +1424,14 @@ Underfull \hbox (badness 1635) in paragraph at lines 14--14
 []\T1/aer/m/n/10 (a) ro-te Kno-ten sind die
  []
 
-<bilder/graphfedersecond.jpg, id=227, 191.9672pt x 182.18062pt>
+<bilder/graphfedersecond.jpg, id=254, 191.9672pt x 182.18062pt>
 File: bilder/graphfedersecond.jpg Graphic file (type jpg)
 
 <use bilder/graphfedersecond.jpg>
 Package pdftex.def Info: bilder/graphfedersecond.jpg used on input line 18.
 (pdftex.def)             Requested size: 115.1812pt x 109.3092pt.
 
-<bilder/graphfederthird.jpg, id=228, 168.63pt x 184.43906pt>
+<bilder/graphfederthird.jpg, id=255, 168.63pt x 184.43906pt>
 File: bilder/graphfederthird.jpg Graphic file (type jpg)
 
 <use bilder/graphfederthird.jpg>
@@ -1376,16 +1442,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 []\T1/aer/m/n/10 (c) dar-stel-lung als
  []
 
-[13
+[15
+
+
+
 
 
 
 ]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 83.
- [14 <./bilder/graphfederfirst.jpg> <./bilder/graphfedersecond.jpg> <./bilder/g
+ [16 <./bilder/graphfederfirst.jpg> <./bilder/graphfedersecond.jpg> <./bilder/g
 raphfederthird.jpg>]
-<bilder/kraftfa.png, id=253, 377.15906pt x 310.15875pt>
+<bilder/kraftfa.png, id=280, 377.15906pt x 310.15875pt>
 File: bilder/kraftfa.png Graphic file (type png)
 
 <use bilder/kraftfa.png>
@@ -1396,7 +1465,7 @@ Underfull \hbox (badness 2197) in paragraph at lines 143--143
 []\T1/aer/m/n/10 (a) an-zie-hen-de Kraft $\OML/cmm/m/it/10 f[]$
  []
 
-<bilder/kraftfr.jpg, id=254, 377.15906pt x 310.15875pt>
+<bilder/kraftfr.jpg, id=281, 377.15906pt x 310.15875pt>
 File: bilder/kraftfr.jpg Graphic file (type jpg)
 
 <use bilder/kraftfr.jpg>
@@ -1407,29 +1476,19 @@ Underfull \hbox (badness 1796) in paragraph at lines 147--147
 []\T1/aer/m/n/10 (b) ab-sto-ÿen-de Kraft $\OML/cmm/m/it/10 f[]$
  []
 
-<bilder/standardgraph.jpg, id=255, 351.56343pt x 315.42844pt>
+<bilder/standardgraph.jpg, id=282, 351.56343pt x 315.42844pt>
 File: bilder/standardgraph.jpg Graphic file (type jpg)
 
 <use bilder/standardgraph.jpg>
 Package pdftex.def Info: bilder/standardgraph.jpg used on input line 151.
 (pdftex.def)             Requested size: 105.46983pt x 94.62926pt.
- [15] [16 <./bilder/kraftfa.png> <./bilder/kraftfr.jpg> <./bilder/standardgraph
-.jpg>]) [17] [18
+ [17] [18 <./bilder/kraftfa.png> <./bilder/kraftfr.jpg> <./bilder/standardgraph
+.jpg>]) [19] [20
 
 
 
 ] (kapitel/kapitel4.tex
 Kapitel 4.
-) [19
-
-
-
-] [20
-
-
-
-] (kapitel/anhang.tex
-Anhang A.
 ) [21
 
 
@@ -1438,26 +1497,36 @@ Anhang A.
 
 
 
+] (kapitel/anhang.tex
+Anhang A.
+) [23
+
+
+
+] [24
+
+
+
 ] (LS7-Abschlussarbeit.lof)
 \tf@lof=\write5
- [23] [24
+ [25] [26
 
 
 ] (LS7-Abschlussarbeit.loa)
 \tf@loa=\write6
 
-[25
+[27
 
 
-] [26
+] [28
 
 
 ] (LS7-Abschlussarbeit.lol)
 \tf@lol=\write7
- [27
+ [29
 
 
-] [28
+] [30
 
 
 ] (LS7-Abschlussarbeit.bbl
@@ -1466,7 +1535,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 10.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
- [29
+ [31
 
 
 ]
@@ -1477,7 +1546,7 @@ tel/einleitung.aux) (kapitel/kapitel2.aux) (kapitel/kapitel3.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
 Package rerunfilecheck Info: File `LS7-Abschlussarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: AD42D07C6DCC0D15E4D7FAEEA940333C;1227.
+(rerunfilecheck)             Checksum: 5782A1D774F86A8888D6BD0E1780BBFE;1280.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1488,10 +1557,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
  ) 
 Here is how much of TeX's memory you used:
- 16122 strings out of 493698
- 239251 string characters out of 3146418
- 434164 words of memory out of 3000000
- 18880 multiletter control sequences out of 15000+200000
+ 16173 strings out of 493698
+ 240438 string characters out of 3146418
+ 432262 words of memory out of 3000000
+ 18915 multiletter control sequences out of 15000+200000
  55764 words of font info for 122 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  63i,12n,124p,924b,2024s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1510,9 +1579,9 @@ Install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><E:/Latex/MiktexInstall/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Latex/MiktexInstall/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb><E:/Latex/MiktexInstall/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb>
-Output written on LS7-Abschlussarbeit.pdf (33 pages, 2053461 bytes).
+Output written on LS7-Abschlussarbeit.pdf (35 pages, 3715773 bytes).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
- 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 476 PDF objects out of 1000 (max. 8388607)
+ 139 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
