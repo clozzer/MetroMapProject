@@ -13,10 +13,10 @@
 \contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Karte des europ\IeC {\"a}ischen Verbundnetzes}}{9}{figure.caption.8}
 \contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Freileitungsmast mit Leitern und Erdseil}}{10}{figure.caption.9}
 \contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Einfacher Graph mit St\IeC {\"a}dten als Knoten und deren H\IeC {\"o}chstspannungsleitungen als Kanten}}{12}{figure.caption.10}
-\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Das schrittweise Vorgehen um einen repr\IeC {\"a}sentierenden Graphen zu erhalten}}{14}{figure.caption.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ausschnit des deutschen H\IeC {\"o}chstspannungsnetzes. Die markierten Orte werden zu den Knoten und die Verbindungen werden zu den Kanten des Graphen.}}}{14}{figure.caption.11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Den Ausschnitt der Karte als Graphen mit jeweils nur einer Leitung.}}}{14}{figure.caption.11}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Die zus\IeC {\"a}tzlichen Leitungen wurden neben dem eigentlichen Knoten hinzugef\IeC {\"u}gt. Hier jeweils immer genau drei.}}}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Das schrittweise Vorgehen um einen repr\IeC {\"a}sentierenden Graphen zu erhalten}}{13}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ausschnit des deutschen H\IeC {\"o}chstspannungsnetzes. Die markierten Orte werden zu den Knoten und die Verbindungen werden zu den Kanten des Graphen.}}}{13}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Den Ausschnitt der Karte als Graphen mit jeweils nur einer Leitung.}}}{13}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Die zus\IeC {\"a}tzlichen Leitungen wurden neben dem eigentlichen Knoten hinzugef\IeC {\"u}gt. Hier jeweils immer genau drei.}}}{13}{figure.caption.11}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Darstellung als Stahlkugeln und Federn eines Graphen}}{16}{figure.caption.12}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {rote Knoten sind die Stahlkugeln verbunden mit Federn}}}{16}{figure.caption.12}

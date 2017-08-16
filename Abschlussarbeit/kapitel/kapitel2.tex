@@ -144,46 +144,13 @@ Ein Graph ist demnach eine Struktur die Informationen anhand Knoten und verbinde
 	\label{fig_einfachergraph}
 \end{figure}
 
-Ein Graph kann gerichtet oder ungerichtet sein. Bei einem ungerichteten Graphen gilt: $e_{v_{i},v_{j}} = e_{v_{j},v_{i}}$. Bei einem gerichteten Graphen gilt das nicht immer. Es wird der Kante somit eine Richtung mitgegeben. Ein Knoten $v_{i}$ hat eine Verbindung $e_{v_{i},v_{j}}$ zu einem anderen Knoten $v_{j}$, dies muss jedoch nicht bedeuten dass es auch eine Verbindung ausgehend von $v_{j}$ nach $v_{i}$ gibt. Es werden im Folgenden nur noch ungerichtete Graphen verwendet, somit gilt stets  $e_{v_{i},v_{j}} = e_{v_{j},v_{i}}$.
+Ein Graph kann gerichtet oder ungerichtet sein. Bei einem ungerichteten Graphen gilt: $e_{v_{i},v_{j}} = e_{v_{j},v_{i}}$. Bei einem gerichteten Graphen gilt das nicht immer. Es wird der Kante somit eine Richtung mitgegeben. Ein Knoten $v_{i}$ hat eine Verbindung $e_{v_{i},v_{j}}$ zu einem anderen Knoten $v_{j}$, dies muss jedoch nicht bedeuten dass es auch eine Verbindung ausgehend von $v_{j}$ nach $v_{i}$ gibt. Es werden im Folgenden nur noch ungerichtete Graphen verwendet, somit gilt stets  $e_{v_{i},v_{j}} = e_{v_{j},v_{i}}$.\\
 
+Gibt es keine Kante $e_{v_{i},v_{i}}$ mit $v_{i} \in V$ so ist der Graph schlingenfrei, es existiert also keine Kante von einem Knoten zu sich selbst. Eine Kante heißt demnach Schlinge sofern $e_{v_{i},v_{i}}$ gilt. \\
 
+Kanten sind benachbart oder adjazent, sofern es zwei Knoten $v_{i},v_{j} \in V$ gibt und eine Kante $e_{v_{i},v_{j}} \in E$ sie verbindet. Da nur ungerichtete Graphen verwendet werden, ist es möglich den Start- sowie Endknoten einer Kante stets zu vertauschen und demnach ist auch $e_{v_{j},v_{i}} \in E$ adjazent. \\
 
-\section{Graph}
-\label{Graph}
-%
-Ein Graph ist eine Struktur, die Informationen über zusammenhängende Objekte repräsentiert. Die jeweiligen Objekte werden Knoten und deren Verbindungen Kanten genannt.
-Somit hat ein Graph eine Menge von Knoten und Kanten.
-\begin{lstlisting}[style=C++, caption=Struktur des Graphen]{Name}
-class Graph {
-List<Knoten> knoten;
-List<Kante> kanten;
-}
-\end{lstlisting}
-Ein Knoten besteht aus einem Koordinatenpaar $(x,y)$, welches definiert wo der Knoten liegt.
-\begin{lstlisting}[style=C++, caption=Struktur eines Knotens]{Name}
-class Knoten {
-int x,y;
-public Knoten(int x, int y)
-{	
-this.x = x;
-this.y = y;
-}	
-}
-\end{lstlisting}
-Die einzelnen Knoten werden über Kanten miteinander verbunden. Eine Kante speichert den Start- sowie Endknoten der Verbindung.
-\begin{lstlisting}[style=C++, caption=Struktur eines Knotens]{Name}
-class Knoten {
-int x,y;
-public Knoten(int x, int y)
-{	
-this.x = x;
-this.y = y;
-}	
-}
-\end{lstlisting}
-Neue Knoten und Kanten können in der Graph-Klasse mit der Funktion $createKnoten()$ und $createKante()$ hinzugefügt werden. Diese Funktionen erstellen einen neuen Knoten beziehungsweise Kante und fügen sie der jeweiligen Liste hinzu.
-
-Nun kann der Graph auf einer Oberfläche gezeichnet, indem erst die Knoten platziert werden anhand ihrer $x$ und $y$ Koordinate und anschließend die Kanten zwischen den jeweiligen Knoten. 
+Bei einem Graph ist nicht nur die Einhaltung der eigentlichen Struktur wichtig sondern auch wie dessen Knoten und Kanten platziert werden, um eine übersichtliche und anschauliche Zeichnung zu erhalten. Eine wichtige Eigenschaft eines Graphen um dies zu erreichen ist die Planarität. Im Zweidimensionalen Raum ist ein Graph planar sofern es möglich ist diesen so zu zeichnen, dass sich keine Kanten überschneiden. Existiert eine solche Darstellung so ist es auch stets möglich den Graphen planar mit geraden Kanten zu zeichnen[2]. In Abbildung 2.7 ist der Unterschied zwischen dem planaren Graphen und seiner unterschiedlichen Zeichnungen zu sehen. Der planare Graph kann somit auch mit überschneidbaren Kanten gezeichnet werden, mit eckigen oder aber auch immer mit geraden Kanten.
 
 
 \section{Vom Höchstspannungsnetz zum Graphen}
