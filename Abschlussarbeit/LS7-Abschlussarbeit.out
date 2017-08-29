@@ -2,18 +2,18 @@
 \BOOKMARK [0][]{chapter.1}{Einleitung}{}% 2
 \BOOKMARK [1][-]{section.1.1}{Motivation und Hintergrund}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.2}{Aufbau der Arbeit}{chapter.1}% 4
-\BOOKMARK [0][]{chapter.2}{Vom H\366chstspannungsnetz zum Graphen}{}% 5
+\BOOKMARK [0][]{chapter.2}{Graphbasierte Modellierung des H\366chstspannungsnetzes}{}% 5
 \BOOKMARK [1][-]{section.2.1}{H\366chstspannungsnetz}{chapter.2}% 6
 \BOOKMARK [1][-]{section.2.2}{Graph}{chapter.2}% 7
 \BOOKMARK [1][-]{section.2.3}{Vom H\366chstspannungsnetz zum Graphen}{chapter.2}% 8
-\BOOKMARK [0][]{chapter.3}{Spring-Algorithmus}{}% 9
-\BOOKMARK [1][-]{section.3.1}{Spring-Algorithmus - Vorgehen}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.2}{Spring-Algorithmus - Erweiterbarkeit}{chapter.3}% 11
-\BOOKMARK [0][]{chapter.4}{Das Kapitel 4}{}% 12
-\BOOKMARK [1][-]{section.4.1}{Kapitel 4 - Unterkapitel 1}{chapter.4}% 13
-\BOOKMARK [1][-]{section.4.2}{Kapitel 4 - Unterkapitel 2}{chapter.4}% 14
+\BOOKMARK [1][-]{section.2.4}{MetroMap Layout Problem}{chapter.2}% 9
+\BOOKMARK [0][]{chapter.3}{Spring-Embedder}{}% 10
+\BOOKMARK [1][-]{section.3.1}{Spring-Embedder - allgemein}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.2}{Spring-Embedder - Vorgehen}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.3}{Spring-Algorithmus - Erweiterbarkeit}{chapter.3}% 13
+\BOOKMARK [0][]{chapter.4}{Das Kapitel 4}{}% 14
 \BOOKMARK [0][]{appendix.A}{Weitere Informationen}{}% 15
-\BOOKMARK [0][]{chapter*.14}{Abbildungsverzeichnis}{}% 16
-\BOOKMARK [0][]{chapter*.15}{Algorithmenverzeichnis}{}% 17
-\BOOKMARK [0][]{chapter*.16}{Quellcodeverzeichnis}{}% 18
-\BOOKMARK [0][]{chapter*.16}{Literaturverzeichnis}{}% 19
+\BOOKMARK [0][]{appendix*.19}{Abbildungsverzeichnis}{}% 16
+\BOOKMARK [0][]{appendix*.20}{Algorithmenverzeichnis}{}% 17
+\BOOKMARK [0][]{appendix*.21}{Quellcodeverzeichnis}{}% 18
+\BOOKMARK [0][]{appendix*.21}{Literaturverzeichnis}{}% 19

@@ -3,18 +3,18 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation und Hintergrund}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Aufbau der Arbeit}{3}{section.1.2}
-\contentsline {chapter}{\numberline {2}Vom H\IeC {\"o}chstspannungsnetz zum Graphen}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}H\IeC {\"o}chstspannungsnetz}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Graph}{11}{section.2.2}
-\contentsline {section}{\numberline {2.3}Vom H\IeC {\"o}chstspannungsnetz zum Graphen}{12}{section.2.3}
-\contentsline {chapter}{\numberline {3}Spring-Algorithmus}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Spring-Algorithmus - Vorgehen}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Spring-Algorithmus - Erweiterbarkeit}{18}{section.3.2}
-\contentsline {chapter}{\numberline {4}Das Kapitel 4}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Kapitel 4 - Unterkapitel 1}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}Kapitel 4 - Unterkapitel 2}{21}{section.4.2}
-\contentsline {chapter}{\numberline {A}Weitere Informationen}{23}{appendix.A}
-\contentsline {chapter}{Abbildungsverzeichnis}{25}{chapter*.14}
-\contentsline {chapter}{Algorithmenverzeichnis}{27}{chapter*.15}
-\contentsline {chapter}{Quellcodeverzeichnis}{29}{chapter*.16}
-\contentsline {chapter}{Literaturverzeichnis}{31}{chapter*.16}
+\contentsline {chapter}{\numberline {2}Graphbasierte Modellierung des H\IeC {\"o}chstspannungsnetzes}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}H\IeC {\"o}chstspannungsnetz}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Graph}{13}{section.2.2}
+\contentsline {section}{\numberline {2.3}Vom H\IeC {\"o}chstspannungsnetz zum Graphen}{15}{section.2.3}
+\contentsline {section}{\numberline {2.4}MetroMap Layout Problem}{18}{section.2.4}
+\contentsline {chapter}{\numberline {3}Spring-Embedder}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Spring-Embedder - allgemein}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Spring-Embedder - Vorgehen}{24}{section.3.2}
+\contentsline {section}{\numberline {3.3}Spring-Algorithmus - Erweiterbarkeit}{26}{section.3.3}
+\contentsline {chapter}{\numberline {4}Das Kapitel 4}{29}{chapter.4}
+\contentsline {chapter}{\numberline {A}Weitere Informationen}{31}{appendix.A}
+\contentsline {chapter}{Abbildungsverzeichnis}{33}{appendix*.19}
+\contentsline {chapter}{Algorithmenverzeichnis}{35}{appendix*.20}
+\contentsline {chapter}{Quellcodeverzeichnis}{37}{appendix*.21}
+\contentsline {chapter}{Literaturverzeichnis}{39}{appendix*.21}

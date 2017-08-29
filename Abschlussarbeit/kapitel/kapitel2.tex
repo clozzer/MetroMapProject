@@ -1,8 +1,8 @@
-%========================================================================================
+3%========================================================================================
 % TU Dortmund, Informatik Lehrstuhl VII
 %========================================================================================
 
-\chapter{Vom Höchstspannungsnetz zum Graphen}
+\chapter{Graphbasierte Modellierung des Höchstspannungsnetzes}
 \label{Kapitel 2}
 %
 
@@ -65,6 +65,7 @@
 	\caption[Freileitungsmast mit Leitern und Erdseil]{Freileitungsmast mit Leitern und Erdseil[1]}
 	\label{fig_erdseil}
 \end{figure}
+Die vorliegenden Ausführungen orientieren sich am Lehrerfachheft "Übertragung und Verteilung der elektrischen Energie".
 Um elektrische Energie über große Distanzen zu transportieren werden Höchstspannungsnetze benutzt. Von einem Kraftwerk ausgehend wird versucht möglichst viele Haushalte, Industrie- und Gewerbebetriebe zu erreichen. Davon ausgehend wird auch der Standort der meisten Kraftwerke bestimmt. Einige Kraftwerke lassen sich nur an bestimmten Standorten errichten, zum Beispiel ein Wasserkraftwerk muss an einem Fluss oder Staudamm errichtet werden. So ist es oft nicht möglich genug Verbraucher zu erreichen, sodass es Mittel bedarf den elektrischen Strom auch über weite Strecken hinweg zu transportieren.
 
 Die Generatoren der modernen Kraftwerke erzeugen eine Spannung von $10500 V$, $21000V$ oder $27000V$[1]. Die Höhe dieser Spannung ist bestimmt durch die Größe bzw. die Leistungsfähigkeit des Kraftwerks und somit von der Nennleistung des Generators.
@@ -124,6 +125,7 @@ Die einzelnen Leiter werden mit sogenannten Erdseilen über Isolatoren am jeweil
 \label{Graph}
 %
 
+Um aus dem Höchstspannungsnetz einen repräsentierenden Graphen zu bekommen wurden die jeweiligen Masten zu Knoten und jeweils eins ihrer Leiterseile zu einer verbindenden Kante. Die Position der Masten war aus einer Karte des Höchstspannungsnetz zu bekommen, ebenso deren Verbindungen. Im Folgenden werden nun die grundlegende Strukturen sowie Eigenschaften eines Graphen erläutert. \\
 
 Ein Graph ist ein Tupel $G = (V,E)$ mit folgenden Eigenschaften:
 
@@ -144,39 +146,124 @@ Ein Graph ist demnach eine Struktur die Informationen anhand Knoten und verbinde
 	\label{fig_einfachergraph}
 \end{figure}
 
+
+\begin{figure}[t]
+	\centering
+	\subfigure[Planarer Graph mit einer nicht planaren Zeichnung]
+	{\includegraphics[scale=0.5]{bilder/planargraph1}\label{fig_planar1}
+	}
+	\hspace{1.0cm}%
+	\subfigure[Planarer Graph mit einer planaren Zeichnung aber einer kurvigen Kante]
+	{\includegraphics[scale=0.5]{bilder/planargraph3}\label{fig_planar2}
+	}
+	\hspace{1.0cm}%
+	\subfigure[Planarer Graph mit planarer Zeichnung sowie geraden Kanten]
+	{\includegraphics[scale=0.5]{bilder/planargraph2}\label{fig_planar3}
+	}
+	\\
+	\caption[Verschiedene Zeichnungen eines planaren Graphen]{Verschiedene Zeichnungen eines planaren Graphen}
+	\label{fig_testbild2}
+\end{figure}
 Ein Graph kann gerichtet oder ungerichtet sein. Bei einem ungerichteten Graphen gilt: $e_{v_{i},v_{j}} = e_{v_{j},v_{i}}$. Bei einem gerichteten Graphen gilt das nicht immer. Es wird der Kante somit eine Richtung mitgegeben. Ein Knoten $v_{i}$ hat eine Verbindung $e_{v_{i},v_{j}}$ zu einem anderen Knoten $v_{j}$, dies muss jedoch nicht bedeuten dass es auch eine Verbindung ausgehend von $v_{j}$ nach $v_{i}$ gibt. Es werden im Folgenden nur noch ungerichtete Graphen verwendet, somit gilt stets  $e_{v_{i},v_{j}} = e_{v_{j},v_{i}}$.\\
 
 Gibt es keine Kante $e_{v_{i},v_{i}}$ mit $v_{i} \in V$ so ist der Graph schlingenfrei, es existiert also keine Kante von einem Knoten zu sich selbst. Eine Kante heißt demnach Schlinge sofern $e_{v_{i},v_{i}}$ gilt. \\
 
 Kanten sind benachbart oder adjazent, sofern es zwei Knoten $v_{i},v_{j} \in V$ gibt und eine Kante $e_{v_{i},v_{j}} \in E$ sie verbindet. Da nur ungerichtete Graphen verwendet werden, ist es möglich den Start- sowie Endknoten einer Kante stets zu vertauschen und demnach ist auch $e_{v_{j},v_{i}} \in E$ adjazent. \\
 
-Bei einem Graph ist nicht nur die Einhaltung der eigentlichen Struktur wichtig sondern auch wie dessen Knoten und Kanten platziert werden, um eine übersichtliche und anschauliche Zeichnung zu erhalten. Eine wichtige Eigenschaft eines Graphen um dies zu erreichen ist die Planarität. Im Zweidimensionalen Raum ist ein Graph planar sofern es möglich ist diesen so zu zeichnen, dass sich keine Kanten überschneiden. Existiert eine solche Darstellung so ist es auch stets möglich den Graphen planar mit geraden Kanten zu zeichnen[2]. In Abbildung 2.7 ist der Unterschied zwischen dem planaren Graphen und seiner unterschiedlichen Zeichnungen zu sehen. Der planare Graph kann somit auch mit überschneidbaren Kanten gezeichnet werden, mit eckigen oder aber auch immer mit geraden Kanten.
+Ein Pfad $w_{v_{n}, .., v_{m}}$ ist eine Folge von verbundenen Knoten ausgehend vom Knoten $v_{n}$ nach $v_{m}$ oder andersrum. Dabei sind die Knoten $v_{n}$ und $v_{m}$ Start- und Endknoten der Folge.    \\
+
+Bei einem Graph ist nicht nur die Einhaltung der eigentlichen Struktur wichtig sondern auch wie dessen Knoten und Kanten platziert werden, um eine übersichtliche und anschauliche Zeichnung zu erhalten. Eine wichtige Eigenschaft eines Graphen um dies zu erreichen ist die Planarität. Im Zweidimensionalen Raum ist ein Graph planar sofern es möglich ist diesen so zu zeichnen, dass sich keine Kanten überschneiden. Existiert eine solche Darstellung so ist es auch stets möglich den Graphen planar mit geraden Kanten zu zeichnen[2]. In Abbildung 2.7 ist der Unterschied zwischen dem planaren Graphen und seiner unterschiedlichen Zeichnungen zu sehen. Der planare Graph kann somit auch mit überschneidbaren Kanten gezeichnet werden, mit eckigen oder auch immer mit geraden Kanten. \\
+
+
+Der Graph wird auf einer simplen Oberfläche im $R_{2}$ gezeichnet. Die Knoten werden jeweils durch ihre Koordinaten auf der Karte als Punkte dargestellt. Kanten sind an keinem expliziten Koordinatenpaar gebunden, werden jedoch indirekt durch die Koordinaten ihrer Knoten auf die Oberfläche gezeichnet. Existiert eine Kante $e_{v_{i},v_{j}} \in E$ so wird diese gezeichnet von der Position des Knotens $v_{i}$ zur Position des Knotens $v_{j}$. Durch das Koordinatenpaar der Knoten ist es demnach sehr einfach möglich den Graphen auf einer Oberfläche darzustellen. 
 
 
 \section{Vom Höchstspannungsnetz zum Graphen}
 \label{Vom Höchstspannungsnetz zum Graphen}
 %
+\begin{figure}[t]
+	\centering
+	\subfigure[Ausschnitt des deutschen Höchstspannungsnetzes]
+	{\includegraphics[scale=0.4]{bilder/Kartenausschnit2mitknoten}\label{fig_planar1}
+	}
+	\hspace{1.0cm}%
+	\subfigure[Resultierender Graph aus der Karte]
+	{\includegraphics[scale=0.5]{bilder/ausschnittgraphmitknoten3}\label{fig_planar2}
+	}
+	\\
+	\caption[Übergang von der Karte des Höchstspannungsnetzes zu einem Graphen]{Übergang von der Karte des Höchstspannungsnetzes zu einem Graphen}
+	\label{fig_testbild2}
+\end{figure}
 
-Es wurden zwei Schritte unternommen um aus dem Höchstspannungsnetz einen repräsentierenden Graphen zu bekommen. Zum einen wurden die jeweiligen Masten zu Knoten und jeweils eins ihrer Leiterseile zu einer verbindenden Kante. Die Position der Masten war aus einer Karte des Höchstspannungsnetz zu bekommen, ebenso deren Verbindungen. 
 
-Da es besonders wichtig ist darzustellen wie viele einzelne Leiterseile über die jeweiligen Verbindungen laufen, musste dieses noch hinzugefügt werden. Es wurde für jedes Leiterseil welches über einen der Masten lief ein jeweiliger Knoten erstellt, und jeweils mit einer Kante verbunden. Diese zusätzlichen Knoten wurden direkt neben dem ursprünglichen Knoten verteilt. Nun hat man die wichtigsten Informationen des Netzes in einen Graphen übertragen.
 
-Die Städte und Orte werden dabei als unbewegliche Knoten angelegt damit der resultierende Graph nicht zu sehr vom ursprünglichen abweicht. Jegliche Eckpunkte zwischen den Orten wurde mithilfe eines weiteren beweglichen Knotens modelliert.
+In der Abbildung 2.x wird der Vorgang von einem Höchstspannungsnetz zu einem Graph dargestellt. In Abbildung 2.x(a) ist ein Ausschnitt des deutschen Höchstspannungsnetzes zu sehen. Gut zu erkennen sind die einzelnen Städte und ihre Verbindungen mittels den Höchstspannungsleitern. Diese Verbindungen repräsentieren einen Mast mit mehreren verschiedenen Leiterseilen. Die größeren Städte werden dabei als unbewegliche Knoten dargestellt. Ein Knoten ist unbeweglich, sofern er nicht mehr durch einen späteren Algorithmus verschoben werden kann, demnach ist seine Position endgültig. Die eigentlichen Positionen der Knoten werden mittels einfachen $x$ und $y$ Koordinaten zugewiesen. \\ 
 
 \begin{figure}[t]
 	\centering
-	\subfigure[Ausschnit des deutschen Höchstspannungsnetzes. Die markierten Orte werden zu den Knoten und die Verbindungen werden zu den Kanten des Graphen.]
-	{\includegraphics[scale=0.8]{bilder/kartenausschnitt}\label{fig_kartenausschnitt}
+	\subfigure[Resultierender Graph aus der Karte]
+	{\includegraphics[scale=0.5]{bilder/ausschnittgraphmitknoten3}\label{fig_planar1}
 	}
 	\hspace{1.0cm}%
-	\subfigure[Den Ausschnitt der Karte als Graphen mit jeweils nur einer Leitung.]
-	{\includegraphics[scale=0.4]{bilder/ausschnittgraph}\label{fig_ausschnittgraph}
-	}
-	\hspace{1.0cm}%
-	\subfigure[Die zusätzlichen Leitungen wurden neben dem eigentlichen Knoten hinzugefügt. Hier jeweils immer genau drei.]
-	{\includegraphics[scale=0.4]{bilder/ausschnittfertigergraph}\label{fig_ausschnittfertigergraph}
+	\subfigure[Der Graph mit den modellierten Leiterseilen]
+	{\includegraphics[scale=0.5]{bilder/ausschnittfertigergraph2}\label{fig_planar2}
 	}
 	\\
-	\caption[Das schrittweise Vorgehen um einen repräsentierenden Graphen zu erhalten]{Das schrittweise Vorgehen um einen repräsentierenden Graphen zu erhalten}
+	\caption[Modellierung der Leiterseile]{Modellierung der Leiterseile}
 	\label{fig_testbild2}
 \end{figure}
+
+
+Auf der Karte in der Abbildung 2.x(a) sind noch eckige Verbindungen zwischen den Städten zu sehen. Eine Verbindung auf dieser Karte repräsentiert den Verlauf der Leiterseile und die Positionen der Höchstspannungsmasten. Ist eine Ecke in der Verbindung zu sehen so wurden Hindernisse umgangen oder kleinere Orte vernetzt. Es ist nicht nötig jeden Mast auf der Karte auch als Knoten zu modellieren, da die späteren Kanten ohne Ecken verlaufen werden. Je mehr Masten als Knoten modelliert werden, desto besser werden die Verbindungen jedoch werden. Besonders wichtig sind die einzelnen Ecken der Verbindungen, diese müssen als Knoten modelliert werden, weil sonst der komplette Verlauf der Leiterseile im späteren Graphen verloren geht. Die Knoten $v_{i}^{'}$ und $v_{n}^{'}$ in der Abbildung 2.x(b) sind größere Städte und wurden dementsprechend zu unbewegliche Knoten. Die Knoten $v_{j}^{'}$ bis $v_{m}^{'}$ sind die Ecken im Verlauf der Verbindung der Karte in der Abbildung 2.x(a) und entsprechen ihren Masten $v_{j}^{'}$ bis $v_{m}^{'}$. Diese Knoten können durch spätere Verfahren verschoben werden. \\
+\begin{figure}[t]
+	\centering
+	{\includegraphics[scale=0.5]{bilder/knotenplacement}\label{fig_knotenplacement}
+	}\\
+	\caption[Erzeugung der neuen Knoten zur Modellierung der Leiterseile]{Erzeugung der neuen Knoten zur Modellierung der Leiterseile}
+	\label{fig_knotenplacement}
+\end{figure}
+
+Um aus der Karte den abschließenden Graphen zu erhalten, der das Höchstspannungsnetz modelliert, müssen noch die einzelnen Leiterseile der Masten hinzugefügt werden. Bis jetzt wurden nur die Knoten und die grundlegenden Verbindungen modelliert. Auf der Karte in Abbildung 2.x(a) fehlen die Informationen um wie viele Leiterseile es sich bei den jeweiligen Verbindungen handelt. Das ist einer der grundlegenden Unterschiede zwischen einer normalen MetroMap und der neuen Darstellung die aus dem Höchstspannungsnetz resultiert. Bei einer MetroMap oder generell bei Bus- und Bahnverbindungen existieren nur sehr selten mehrere Straßen oder Gleise die immer mit der selben Verbindung verlaufen. Da dies jedoch der Fall ist bei einem Höchstspannungsnetz muss diese Eigenschaft extra modelliert werden. Im folgenden werden die Verbindungen immer mit genau drei Leiterseilen modelliert, anstatt die echten Werte zu nehmen, welche sich zwischen 1-5 Leiterseile befinden, das macht den Graphen für die spätere Handhabung überschaubarer. \\
+
+
+Um die jeweiligen Leiterseile modellieren zu können wurden weitere bewegliche Knoten erstellt. Ein Knoten für jede Ecke einer Verbindung steht für das jeweilige Leiterseile an einem Mast. Diese Knoten wurden um den ursprünglichen Knoten platziert, sodass sich parallele Verlaufe gebildet haben, wie es auch bei einem echten Höchstspannungsnetz mit den Leiterseilen der Fall ist. Auf der Abbildung 2.x wird diese Verfahren dargestellt, der Knoten $v_{j}^{'}$ wird in Abbildung 2.x zu den drei Knoten $v_{i}^{''}$, $v_{j}^{''}$ und $v_{k}^{''}$, die jetzt den Mast mit den drei Leiterseilen repräsentieren. Da es drei Leiterseile pro Verbindung gibt, wurde die Anzahl der Kanten des resultierenden Graphen durch dieses Vorgehen fast verdreifacht.  
+
+
+
+
+
+\section{MetroMap Layout Problem}
+\label{MetroMap}
+%
+\begin{figure}[t]
+	\centering
+	{\includegraphics[scale=0.3]{bilder/dortmundmap}\label{fig_dortmundmap}
+	}\\
+	\caption[Dortmunder MetroMap]{Dortmunder MetroMap [http://www.urbanrail.net/eu/de/do/dortmund-map.png]}
+	\label{fig_dortmundmap}
+\end{figure}
+
+
+MetroMaps sind Bestandteil des täglichen Lebens. Viele benutzen sie zur schnellen Orientierung und Übersicht. Eine MetroMap macht aus, dass sie schnell zu lesen und zu verstehen ist. Es muss demnach möglich sein die benötigen Informationen in kurzer Zeit und sicher aus der Karte zu erhalten. \\
+
+MetroMaps dienen hauptsächlich dazu die richtige Bahn oder Bus zum gewünschten Ziel zu nehmen und sich eine gute Übersicht der Lage zu verschaffen. Die geographisch echten Karten mit ihren Verzweigungen und Überschneidungen erfüllen diesen Zweck nicht. In Abbildung 2.9 wird eine Dortmunder MetroMap der lokalen Bahnverbindungen gezeigt. Fast alle vorhandenen MetroMaps von Bahn- und Busnetzwerken wurden per Hand gezeichnet, jedoch ist es auch möglich dies mittels Algorithmen zu tun. Es gibt bereits viele verschiedene Algorithmen sowie Ansätze die MetroMaps automatisch aus einem Graphen generieren. Um diese zu behandeln muss zu erst geklärt werden was genau eine MetroMap ist und was diese ausmacht. \\
+
+Eine essentielle Eigenschaft die der Graph der MetroMap haben sollte ist die Planarität. Wird der Graph wie ein Labyrinth gezeichnet mit überlappenden Kanten, so wird diese fast unmöglich für den alltäglichen Gebrauch zu benutzen sein.
+
+\begin{figure}[t]
+	\centering
+	{\includegraphics[scale=0.3]{bilder/labelplacements}\label{fig_labelplacements}
+	}\\
+	\caption[8 Mögliche Platzierungen der Beschriftung]{8 Mögliche Platzierungen der Beschriftung [http://doi.ieeecomputersociety.org/cms/Computer.org/dl/ trans/tg/2011/01/figures/ttg20110101018.jpg]}
+	\label{fig_labelplacements}
+\end{figure}
+
+Eine weitere Sache die entscheidend dazu beiträgt die resultierende Karte möglichst übersichtlich zu gestalten ist die Vermeidung von eckigen und runden Kanten. Es ist viel einfacher den gewollten Weg auf einer senkrechten bzw. waagerechten Strecke zu verfolgen als wenn dieses über eckige und runde Kanten geschieht. \\
+
+Bei einer MetroMap ist es sehr wichtig zu unterscheiden um welche Art der Verbindung es sich handelt. Denn ein Bus fährt nicht auf Gleisen und Züge nicht auf Straßen, somit müssen unterschiedliche Verbindungen gekennzeichnet werden. Dafür werden die jeweiligen Pfade $w_{v_{n}, .., v_{m}}$ im Graphen aufgestellt, die diese Verbindungen repräsentieren. Hierbei sind die Knoten $v_{n}$ und $v_{m}$ jeweils die letzten Stationen der Verbindung. Diese können nun auf unterschiedliche Weise gekennzeichnet werden, durch Färbung, Umrandung oder indem die Verbindung verschieden gestrichelt wird. \\
+
+Eine MetroMap verliert ihre Eigenschaft der Topologie sowie der geographischen Richtigkeit im Vergleich zu einer normalen Karte, dies resultiert zwingend aus der Verschiebung der Knoten und Kanten um einen übersichtlicheren Graphen zu bekommen. Da die Verbindungen aus den realen Netzen modelliert wurden, wird stets eine gewisse Topologie beibehalten beim Erstellen der MetroMap. Dabei wird der geographische Abstand zwischen zwei Punkten vernachlässigt. Die Lage der ursprünglichen Stationen ist zur Bewahrung der Navigation da weitaus wichtiger. Es würde auch stark verwirren wenn eine Verbindung von A über B nach C geht, die eigentlichen Stationen auf der Karte jedoch in Reihenfolge A C B gezeichnet werden. Dies würde auch im Widerspruch dazustehen, gerade Kanten aufrechtzuerhalten und ganze Verbindungen möglichst senkrecht und waagerecht zu zeichnen. \\
+
+Neben der Platzierung der Kanten und Knoten ist es sehr wichtig eine passende Beschriftung der Objekte in der MetroMap zu haben. Für diese Beschriftungen muss es den Platz geben, da sich die Beschriftungen nicht mit den Kanten oder Knoten überschneiden dürfen. Wenn der Abstand zwischen den jeweiligen Beschriftungen der Kanten und Knoten zu weit oder zu nah ist, wird es schwierig zu erkennen zu welchem Objekt diese gehört. 
+
+Ein möglicher Ansatz dieses Problem zu lösen wäre es jedem Objekt eine gewisse Anzahl von möglichen Beschriftungspositionen zu geben und anschließend die sich überschneidenden Positionen als mögliche Beschriftungen zu streichen. Was bleibt sind überschneidungsfreie Beschriftungen eines jeden Objektes. Es müssen demnach zu erst die möglichen Beschriftungspositionen eines Objektes gefunden werden. Dazu werden 8 Positionen um das jeweilige Objekt gewählt, wie in der Abbildung 2.x dargestellt. Man kann diesen Positionen nun eine Wertigkeit geben. Im $45$ Winkel zum Objekt, wäre die Beschriftung generell am besten platziert um einen übersichtlichen Graphen zu bekommen. Nun ist es leicht die beste überschneidungsfreie Beschriftung mit den geringsten Kosten zu finden. Die Kosten stellen die Wertigkeit der Positionen aller Beschriftungen der Objekte.  

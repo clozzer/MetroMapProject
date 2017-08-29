@@ -2,7 +2,7 @@
 % TU Dortmund, Informatik Lehrstuhl VII
 %========================================================================================
 
-\chapter{Spring-Algorithmus}
+\chapter{Spring-Embedder}
 \label{Kapitel 3}
 %
 
@@ -27,6 +27,9 @@
 In diesem Kapitel werden die Grundlagen des Spring-Algorithmus erklärt. 
 Es geht um die Verwendung dieser Algorithmen, das grundsätzliche Vorgehen
 und die Erweiterbarkeit.
+
+\section{Spring-Embedder - allgemein}
+\label{Kapitel_3_-_Unterkapitel_2}
 
 
 Das Problem der Darstellung basiert auf der Platzierung der Kanten sowie
@@ -74,7 +77,7 @@ auch planar sein. Ein Graph ist planar wenn sich keine Kanten überschneiden, di
 
 
 
-\section{Spring-Algorithmus - Vorgehen}
+\section{Spring-Embedder - Vorgehen}
 \label{Kapitel_3_-_Unterkapitel_2}
 %
 
@@ -164,9 +167,4 @@ Im letzten Schritt des Algorithmus werden die Knoten nun in Richtung ihres Beweg
 
 \section{Spring-Algorithmus - Erweiterbarkeit}
 \label{Kapitel_3_-_Unterkapitel_3}   
-Eine besondere Eigenschaft dieses Algorithmus ist die leichte Erweiterbarkeit. Er kann leicht an viele verschiedene Probleme angepasst werden.
-Der Algorithmus 2.1 ist bereits eine erste Erweiterung des ursprünglichen Algorithmus. Beim Bewegen der Knoten im dritten Schritt wird sichergestellt, dass sich die Knoten weiterhin auf der zur Verfügung stehenden Fläche befinden.
-
-Ebenfalls modifizierbar sind die Funktionen $f^{a}_{v_{i},v_{j}}$ und $f^{r}_{v_{i},v_{j}}$. Im Kapitel 3 wird dies genutzt um den Graphen weiter anzupassen. Es ist leicht möglich noch weitere Kräfte miteinzubeziehen oder sie ganz anderen Knoten zuzuweisen. Im späteren Verlauf wird es auch Knoten geben, die sich nicht bewegen sollen, weil sie zum Beispiel größere Städte oder zentrale Verbindungspunkte sind.
-
 %

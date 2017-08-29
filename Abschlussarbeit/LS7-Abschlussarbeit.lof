@@ -3,28 +3,37 @@
 \contentsline {figure}{\numberline {\relax 1.1}{\ignorespaces Karte des deutschen H\IeC {\"o}chstspannungsnetzes}}{4}{figure.caption.3}
 \contentsline {figure}{\numberline {\relax 1.2}{\ignorespaces MetroMap der Bahnverbindungen in Singapur}}{4}{figure.caption.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Prinzip der Stromerzeugung}}{6}{figure.caption.5}
-\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Die vier verschiedenen Leitungstypen}}{7}{figure.caption.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Niederspannungsleitungen}}}{7}{figure.caption.6}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mittelspannungsmast}}}{7}{figure.caption.6}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Hochspannungsleitungen}}}{7}{figure.caption.6}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {modernisierter H\IeC {\"o}chstspannungsmast}}}{7}{figure.caption.6}
-\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Karte des deutschen H\IeC {\"o}chstspannungsnetzes}}{8}{figure.caption.7}
-\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Karte des europ\IeC {\"a}ischen Verbundnetzes}}{9}{figure.caption.8}
-\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Freileitungsmast mit Leitern und Erdseil}}{10}{figure.caption.9}
-\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Einfacher Graph mit St\IeC {\"a}dten als Knoten und deren H\IeC {\"o}chstspannungsleitungen als Kanten}}{12}{figure.caption.10}
-\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Das schrittweise Vorgehen um einen repr\IeC {\"a}sentierenden Graphen zu erhalten}}{13}{figure.caption.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ausschnit des deutschen H\IeC {\"o}chstspannungsnetzes. Die markierten Orte werden zu den Knoten und die Verbindungen werden zu den Kanten des Graphen.}}}{13}{figure.caption.11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Den Ausschnitt der Karte als Graphen mit jeweils nur einer Leitung.}}}{13}{figure.caption.11}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Die zus\IeC {\"a}tzlichen Leitungen wurden neben dem eigentlichen Knoten hinzugef\IeC {\"u}gt. Hier jeweils immer genau drei.}}}{13}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Prinzip der Stromerzeugung}}{8}{figure.caption.5}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Die vier verschiedenen Leitungstypen}}{9}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Niederspannungsleitungen}}}{9}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mittelspannungsmast}}}{9}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Hochspannungsleitungen}}}{9}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {modernisierter H\IeC {\"o}chstspannungsmast}}}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Karte des deutschen H\IeC {\"o}chstspannungsnetzes}}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Karte des europ\IeC {\"a}ischen Verbundnetzes}}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Freileitungsmast mit Leitern und Erdseil}}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Einfacher Graph mit St\IeC {\"a}dten als Knoten und deren H\IeC {\"o}chstspannungsleitungen als Kanten}}{14}{figure.caption.10}
+\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Verschiedene Zeichnungen eines planaren Graphen}}{15}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Planarer Graph mit einer nicht planaren Zeichnung}}}{15}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Planarer Graph mit einer planaren Zeichnung aber einer kurvigen Kante}}}{15}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Planarer Graph mit planarer Zeichnung sowie geraden Kanten}}}{15}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces \IeC {\"U}bergang von der Karte des H\IeC {\"o}chstspannungsnetzes zu einem Graphen}}{16}{figure.caption.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ausschnitt des deutschen H\IeC {\"o}chstspannungsnetzes}}}{16}{figure.caption.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Resultierender Graph aus der Karte}}}{16}{figure.caption.12}
+\contentsline {figure}{\numberline {\relax 2.9}{\ignorespaces Modellierung der Leiterseile}}{17}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Resultierender Graph aus der Karte}}}{17}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Der Graph mit den modellierten Leiterseilen}}}{17}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 2.10}{\ignorespaces Erzeugung der neuen Knoten zur Modellierung der Leiterseile}}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 2.11}{\ignorespaces Dortmunder MetroMap}}{19}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 2.12}{\ignorespaces 8 M\IeC {\"o}gliche Platzierungen der Beschriftung}}{20}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Darstellung als Stahlkugeln und Federn eines Graphen}}{16}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {rote Knoten sind die Stahlkugeln verbunden mit Federn}}}{16}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {die Federn verschieben die Knoten}}}{16}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {darstellung als Graph}}}{16}{figure.caption.12}
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Wirkende Kr\IeC {\"a}fte im Graphen}}{18}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {anziehende Kraft $f^{a}$ zwischen dem dritten und vierten Knoten}}}{18}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {absto\IeC {\ss }ende Kraft $f^{r}$ zwischen dem ersten und vierten Knoten}}}{18}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {die wirkenden Kr\IeC {\"a}fte l\IeC {\"o}sen sich auf}}}{18}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Darstellung als Stahlkugeln und Federn eines Graphen}}{24}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {rote Knoten sind die Stahlkugeln verbunden mit Federn}}}{24}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {die Federn verschieben die Knoten}}}{24}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {darstellung als Graph}}}{24}{figure.caption.17}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Wirkende Kr\IeC {\"a}fte im Graphen}}{27}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {anziehende Kraft $f^{a}$ zwischen dem dritten und vierten Knoten}}}{27}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {absto\IeC {\ss }ende Kraft $f^{r}$ zwischen dem ersten und vierten Knoten}}}{27}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {die wirkenden Kr\IeC {\"a}fte l\IeC {\"o}sen sich auf}}}{27}{figure.caption.18}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
