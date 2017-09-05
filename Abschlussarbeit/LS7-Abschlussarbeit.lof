@@ -17,23 +17,32 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Planarer Graph mit einer nicht planaren Zeichnung}}}{15}{figure.caption.11}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Planarer Graph mit einer planaren Zeichnung aber einer kurvigen Kante}}}{15}{figure.caption.11}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Planarer Graph mit planarer Zeichnung sowie geraden Kanten}}}{15}{figure.caption.11}
-\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces \IeC {\"U}bergang von der Karte des H\IeC {\"o}chstspannungsnetzes zu einem Graphen}}{16}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ausschnitt des deutschen H\IeC {\"o}chstspannungsnetzes}}}{16}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Resultierender Graph aus der Karte}}}{16}{figure.caption.12}
-\contentsline {figure}{\numberline {\relax 2.9}{\ignorespaces Modellierung der Leiterseile}}{17}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Resultierender Graph aus der Karte}}}{17}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Der Graph mit den modellierten Leiterseilen}}}{17}{figure.caption.13}
-\contentsline {figure}{\numberline {\relax 2.10}{\ignorespaces Erzeugung der neuen Knoten zur Modellierung der Leiterseile}}{18}{figure.caption.14}
-\contentsline {figure}{\numberline {\relax 2.11}{\ignorespaces Dortmunder MetroMap}}{19}{figure.caption.15}
-\contentsline {figure}{\numberline {\relax 2.12}{\ignorespaces 8 M\IeC {\"o}gliche Platzierungen der Beschriftung}}{20}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces \IeC {\"U}bergang von der Karte des H\IeC {\"o}chstspannungsnetzes zu einem Graphen}}{17}{figure.caption.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ausschnitt des deutschen H\IeC {\"o}chstspannungsnetzes}}}{17}{figure.caption.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Resultierender Graph aus der Karte}}}{17}{figure.caption.12}
+\contentsline {figure}{\numberline {\relax 2.9}{\ignorespaces Modellierung der Leiterseile}}{18}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Resultierender Graph aus der Karte}}}{18}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Der Graph mit den modellierten Leiterseilen}}}{18}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 2.10}{\ignorespaces Erzeugung der neuen Knoten zur Modellierung der Leiterseile}}{19}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 2.11}{\ignorespaces Dortmunder MetroMap}}{20}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 2.12}{\ignorespaces 8 M\IeC {\"o}gliche Platzierungen der Beschriftung}}{21}{figure.caption.16}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Darstellung als Stahlkugeln und Federn eines Graphen}}{24}{figure.caption.17}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {rote Knoten sind die Stahlkugeln verbunden mit Federn}}}{24}{figure.caption.17}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {die Federn verschieben die Knoten}}}{24}{figure.caption.17}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {darstellung als Graph}}}{24}{figure.caption.17}
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Wirkende Kr\IeC {\"a}fte im Graphen}}{27}{figure.caption.18}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {anziehende Kraft $f^{a}$ zwischen dem dritten und vierten Knoten}}}{27}{figure.caption.18}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {absto\IeC {\ss }ende Kraft $f^{r}$ zwischen dem ersten und vierten Knoten}}}{27}{figure.caption.18}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {die wirkenden Kr\IeC {\"a}fte l\IeC {\"o}sen sich auf}}}{27}{figure.caption.18}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Wirkende Kr\IeC {\"a}fte im Graphen}}{29}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {anziehende Kraft $f^{a}$ zwischen dem dritten und vierten Knoten}}}{29}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {absto\IeC {\ss }ende Kraft $f^{r}$ zwischen dem ersten und vierten Knoten}}}{29}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {die wirkenden Kr\IeC {\"a}fte l\IeC {\"o}sen sich auf}}}{29}{figure.caption.18}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Dortmunder MetroMap}}{33}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Dortmunder MetroMap}}{34}{figure.caption.20}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Dortmunder MetroMap}}{35}{figure.caption.21}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Dortmunder MetroMap}}{36}{figure.caption.22}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Dortmunder MetroMap}}{37}{figure.caption.23}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Dortmunder MetroMap}}{39}{figure.caption.24}
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Vergleich der Leiterseile}}{40}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {deutlich vergr\IeC {\"o}\IeC {\ss }erter Abstand zwischen den Knoten, der Verlauf wurde jedoch beibehalten}}}{40}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Der Graph mit den modellierten Leiterseilen}}}{40}{figure.caption.25}
 \addvspace {10\p@ }

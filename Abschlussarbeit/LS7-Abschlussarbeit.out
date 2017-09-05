@@ -11,9 +11,12 @@
 \BOOKMARK [1][-]{section.3.1}{Spring-Embedder - allgemein}{chapter.3}% 11
 \BOOKMARK [1][-]{section.3.2}{Spring-Embedder - Vorgehen}{chapter.3}% 12
 \BOOKMARK [1][-]{section.3.3}{Spring-Algorithmus - Erweiterbarkeit}{chapter.3}% 13
-\BOOKMARK [0][]{chapter.4}{Das Kapitel 4}{}% 14
-\BOOKMARK [0][]{appendix.A}{Weitere Informationen}{}% 15
-\BOOKMARK [0][]{appendix*.19}{Abbildungsverzeichnis}{}% 16
-\BOOKMARK [0][]{appendix*.20}{Algorithmenverzeichnis}{}% 17
-\BOOKMARK [0][]{appendix*.21}{Quellcodeverzeichnis}{}% 18
-\BOOKMARK [0][]{appendix*.21}{Literaturverzeichnis}{}% 19
+\BOOKMARK [0][]{chapter.4}{Anwendung des Spring-Embedders auf den modellierten Graphen}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Nachteile des Spring-Embedders auf der Anwendung des Graphen}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Anpassung des Spring-Embedders zur Anwendung auf das modellierte H\366chstspannungsnetz}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.3}{Weitere Ans\344tze zur Verbesserung des Layouts}{chapter.4}% 17
+\BOOKMARK [0][]{appendix.A}{Weitere Informationen}{}% 18
+\BOOKMARK [0][]{chapter*.26}{Abbildungsverzeichnis}{}% 19
+\BOOKMARK [0][]{chapter*.27}{Algorithmenverzeichnis}{}% 20
+\BOOKMARK [0][]{chapter*.28}{Quellcodeverzeichnis}{}% 21
+\BOOKMARK [0][]{chapter*.28}{Literaturverzeichnis}{}% 22
