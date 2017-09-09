@@ -1,4 +1,4 @@
-3%========================================================================================
+%========================================================================================
 % TU Dortmund, Informatik Lehrstuhl VII
 %========================================================================================
 
@@ -103,7 +103,7 @@ Entschieden wird anhand der technischen Möglichkeiten, die unterschiedlichen ph
 
 Die meisten Leiter bestehen aus Kupfer und Aluminium, dank der hohen Elastizität und elektrischen Leitfähigkeit. Aluminium hat gerade für den Freileitungsbau eine besondere Eigenschaft des sehr geringen Eigengewichtes, was einen größeren Abstand der Masten ermöglicht.
 
-Die Kabel bestehen aus einem Kern der Leiter, welche voneinander durch Isolierungen geschützt werden. Diese nennt man Adern. Mehrere Adern gebunden durch einen Mantel ergeben das letztendliche Kabel, diese können durch ein- oder mehradrig unterschieden werden. Die einzelnen Isolierungen der Adern bestehen aus ölgetränkten Papier, bei niedrigen Spannungen auch Kunststoff(PVC). Die dicke der Isolierung wird durch die jeweilige Nennspannung der Adern bestimmt.
+Die Kabel bestehen aus einem Kern der Leiter, welche voneinander durch Isolierungen geschützt werden. Diese werden Adern genannt. Mehrere Adern gebunden durch einen Mantel ergeben das letztendliche Kabel, diese können durch ein- oder mehradrig unterschieden werden. Die einzelnen Isolierungen der Adern bestehen aus ölgetränkten Papier, bei niedrigen Spannungen auch Kunststoff(PVC). Die dicke der Isolierung wird durch die jeweilige Nennspannung der Adern bestimmt.
 
 Der Mantel soll die Kabel eng zusammenhalten und gegen äußere mechanische Beschädigungen schützen, ebenso muss er gegen eindringende Feuchtigkeit isolieren. Da Hochspannungsleitungen eine besonders große Isolierung benötigen, werden die Leiter in einem Stahlrohr mit Stickstoffgas unter sehr großen Druck verlegt.
 
@@ -119,7 +119,7 @@ Es werden verschiedene Werkstoffe zum Bau der Masten verwendet, dabei entscheide
 
 Je nachdem wie viel Kraft auf die Masten ausgeübt wird, variiert deren Größe, Konstruktion und Abstand. Äußere Faktoren wie Windbelastungen sowie Schnee- und Eislasten werden dabei mitberücksichtigt.
 
-Die einzelnen Leiter werden mit sogenannten Erdseilen über Isolatoren am jeweiligen Mast angebracht. Die Erdseile dienen dabei nicht dem Transport der elektrischen Energie sondern dem Schutz vor Blitzeinschlägen. Es verlaufen demnach mehrere Stromkreise mit mehreren Leitern und dem Erdseil über einen Mast. In Abbildung 2.5 sieht man die Konstruktion der Masten sehr gut. Ebenso zu sehen sind die jeweiligen Isolatoren zwischen den Leitern und den Masten und das Erdseil welches an der Spitze angebracht ist.
+Die einzelnen Leiter werden mit sogenannten Erdseilen über Isolatoren am jeweiligen Mast angebracht. Die Erdseile dienen dabei nicht dem Transport der elektrischen Energie sondern dem Schutz vor Blitzeinschlägen. Es verlaufen demnach mehrere Stromkreise mit mehreren Leitern und dem Erdseil über einen Mast. In Abbildung 2.5 wird die Konstruktion der Masten sehr gut verdeutlicht. Ebenso zu sehen sind die jeweiligen Isolatoren zwischen den Leitern und den Masten und das Erdseil welches an der Spitze angebracht ist.
 
 \section{Graph}
 \label{Graph}
@@ -136,7 +136,7 @@ Ein Graph ist ein Tupel $G = (V,E)$ mit folgenden Eigenschaften:
 
 Eine Kante $e_{v_{i},v_{j}} \in E$ mit $v_{i},v_{j} \in V$ repräsentiert somit die Verbindung des Knoten $v_{i}$ mit $v_{j}$.
 
-Ein Graph ist demnach eine Struktur die Informationen anhand Knoten und verbindenden Kanten speichert. Ein einfaches Beispiel sieht man in Abbildung 2.6. Es werden die Städte Köln, Kassel, Frankfurt, Nürnberg und München jeweils durch Knoten repräsentiert und deren Höchstleitungsverbindung durch eine Kante. Es ist nun sehr leicht möglich aus dem Graphen zu entnehmen welche Städte durch Freileitungen miteinander verbunden sind.\\
+Ein Graph ist demnach eine Struktur die Informationen anhand Knoten und verbindenden Kanten speichert. Ein einfaches Beispiel ist in der Abbildung 2.6 zu sehen. Es werden die Städte Köln, Kassel, Frankfurt, Nürnberg und München jeweils durch Knoten repräsentiert und deren Höchstleitungsverbindung durch eine Kante. Es ist nun sehr leicht möglich aus dem Graphen zu entnehmen welche Städte durch Freileitungen miteinander verbunden sind.\\
 
 \begin{figure}[t]
 	\centering
@@ -179,7 +179,7 @@ Bei einem Graph ist nicht nur die Einhaltung der eigentlichen Struktur wichtig s
 
 Der Graph wird auf einer simplen Oberfläche im $R_{2}$ gezeichnet. Die Knoten werden jeweils durch ihre Koordinaten auf der Karte als Punkte dargestellt. Kanten sind an keinem expliziten Koordinatenpaar gebunden, werden jedoch indirekt durch die Koordinaten ihrer Knoten auf die Oberfläche gezeichnet. Existiert eine Kante $e_{v_{i},v_{j}} \in E$ so wird diese gezeichnet von der Position des Knotens $v_{i}$ zur Position des Knotens $v_{j}$. Durch das Koordinatenpaar der Knoten ist es demnach sehr einfach möglich den Graphen auf einer Oberfläche darzustellen. \\
 
-Die Knoten werden als Punkte dargestellt, während die Kanten zwischen den Knoten als einfache gerade Striche gezeichnet werden. Es gibt jedoch viele weitere Methoden um dieses Struktur darzustellen. Die Knoten können ebenso mittels Boxen oder Vierecke dargestellt werden, Kanten als Kurven oder gestrichelte Linien[Algorithms for drawing graphs:an annotated bibliography *]. Die Größe und Farbe der einzelnen Knoten und Kanten können im Graph variieren und müssen nicht einheitlich gewählt werden. Dies ist sehr nützlich um bestimmte wichtige Knoten hervorzuheben oder um Beziehungen zwischen Knotengruppen darzustellen, indem man ihnen alle die selbe Farbe zuweist oder Form vergibt. Der Graph, der im Kapitel 2.3 erstellt wird hat zwei verschiedene Gruppen von Knoten. Die eine Knotengruppe lässt sich durch den Algorithmus im Kapitel drei verschieben, während die anderen Knoten zu den unbeweglichen Knoten gehören und ihre Position endgültig ist. Die unbeweglichen Knoten repräsentieren Große Städte und die beweglichen Knoten kleinere Städte und Abzweigungen. Um diese Knoten voneinander unterscheiden zu können sind die Knoten, die die größeren Städte repräsentieren, rot anstatt schwarz
+Die Knoten werden als Punkte dargestellt, während die Kanten zwischen den Knoten als einfache gerade Striche gezeichnet werden. Es gibt jedoch viele weitere Methoden um dieses Struktur darzustellen. Die Knoten können ebenso mittels Boxen oder Vierecke dargestellt werden, Kanten als Kurven oder gestrichelte Linien[Algorithms for drawing graphs:an annotated bibliography *]. Die Größe und Farbe der einzelnen Knoten und Kanten können im Graph variieren und müssen nicht einheitlich gewählt werden. Dies ist sehr nützlich um bestimmte wichtige Knoten hervorzuheben oder um Beziehungen zwischen Knotengruppen darzustellen, indem ihnen alle die selbe Farbe zugewiesen wird oder ihnen die gleiche Form vergibt. Der Graph, der im Kapitel 2.3 erstellt wird hat zwei verschiedene Gruppen von Knoten. Die eine Knotengruppe lässt sich durch den Algorithmus im Kapitel drei verschieben, während die anderen Knoten zu den unbeweglichen Knoten gehören und ihre Position endgültig ist. Die unbeweglichen Knoten repräsentieren Große Städte und die beweglichen Knoten kleinere Städte und Abzweigungen. Um diese Knoten voneinander unterscheiden zu können sind die Knoten, die die größeren Städte repräsentieren, rot anstatt schwarz
  und wurden zur noch besseren Erkennbarkeit größer gezeichnet. Die Kanten wurden jedoch stets als schwarze Linien dargestellt, da es keine Unterschiede zwischen den Verbindungen in einem Höchstspannungsnetz gibt. 
 
 \section{Vom Höchstspannungsnetz zum Graphen}
@@ -188,11 +188,11 @@ Die Knoten werden als Punkte dargestellt, während die Kanten zwischen den Knote
 \begin{figure}[t]
 	\centering
 	\subfigure[Ausschnitt des deutschen Höchstspannungsnetzes]
-	{\includegraphics[scale=0.4]{bilder/Kartenausschnit2mitknoten}\label{fig_planar1}
+	{\includegraphics[scale=0.6]{bilder/Kartenausschnit2mitknoten}\label{fig_planar1}
 	}
 	\hspace{1.0cm}%
 	\subfigure[Resultierender Graph aus der Karte]
-	{\includegraphics[scale=0.5]{bilder/ausschnittgraphmitknoten3}\label{fig_planar2}
+	{\includegraphics[scale=0.7]{bilder/ausschnittgraphmitknoten3}\label{fig_planar2}
 	}
 	\\
 	\caption[Übergang von der Karte des Höchstspannungsnetzes zu einem Graphen]{Übergang von der Karte des Höchstspannungsnetzes zu einem Graphen}
@@ -206,11 +206,11 @@ In der Abbildung 2.x wird der Vorgang von einem Höchstspannungsnetz zu einem Gr
 \begin{figure}[t]
 	\centering
 	\subfigure[Resultierender Graph aus der Karte]
-	{\includegraphics[scale=0.5]{bilder/ausschnittgraphmitknoten3}\label{fig_planar1}
+	{\includegraphics[scale=0.7]{bilder/ausschnittgraphmitknoten3}\label{fig_planar1}
 	}
 	\hspace{1.0cm}%
 	\subfigure[Der Graph mit den modellierten Leiterseilen]
-	{\includegraphics[scale=0.5]{bilder/ausschnittfertigergraph2}\label{fig_planar2}
+	{\includegraphics[scale=0.7]{bilder/ausschnittfertigergraph2}\label{fig_planar2}
 	}
 	\\
 	\caption[Modellierung der Leiterseile]{Modellierung der Leiterseile}
@@ -221,7 +221,7 @@ In der Abbildung 2.x wird der Vorgang von einem Höchstspannungsnetz zu einem Gr
 Auf der Karte in der Abbildung 2.x(a) sind noch eckige Verbindungen zwischen den Städten zu sehen. Eine Verbindung auf dieser Karte repräsentiert den Verlauf der Leiterseile und die Positionen der Höchstspannungsmasten. Ist eine Ecke in der Verbindung zu sehen so wurden Hindernisse umgangen oder kleinere Orte vernetzt. Es ist nicht nötig jeden Mast auf der Karte auch als Knoten zu modellieren, da die späteren Kanten ohne Ecken verlaufen werden. Je mehr Masten als Knoten modelliert werden, desto besser werden die Verbindungen jedoch werden. Besonders wichtig sind die einzelnen Ecken der Verbindungen, diese müssen als Knoten modelliert werden, weil sonst der komplette Verlauf der Leiterseile im späteren Graphen verloren geht. Die Knoten $v_{i}^{'}$ und $v_{n}^{'}$ in der Abbildung 2.x(b) sind größere Städte und wurden dementsprechend zu unbewegliche Knoten. Die Knoten $v_{j}^{'}$ bis $v_{m}^{'}$ sind die Ecken im Verlauf der Verbindung der Karte in der Abbildung 2.x(a) und entsprechen ihren Masten $v_{j}^{'}$ bis $v_{m}^{'}$. Diese Knoten können durch spätere Verfahren verschoben werden. \\
 \begin{figure}[t]
 	\centering
-	{\includegraphics[scale=0.5]{bilder/knotenplacement}\label{fig_knotenplacement}
+	{\includegraphics[scale=0.7]{bilder/knotenplacement}\label{fig_knotenplacement}
 	}\\
 	\caption[Erzeugung der neuen Knoten zur Modellierung der Leiterseile]{Erzeugung der neuen Knoten zur Modellierung der Leiterseile}
 	\label{fig_knotenplacement}
@@ -255,7 +255,7 @@ Eine essentielle Eigenschaft die der Graph der MetroMap haben sollte ist die Pla
 
 \begin{figure}[t]
 	\centering
-	{\includegraphics[scale=0.3]{bilder/labelplacements}\label{fig_labelplacements}
+	{\includegraphics[scale=0.25]{bilder/labelplacements}\label{fig_labelplacements}
 	}\\
 	\caption[8 Mögliche Platzierungen der Beschriftung]{8 Mögliche Platzierungen der Beschriftung [http://doi.ieeecomputersociety.org/cms/Computer.org/dl/ trans/tg/2011/01/figures/ttg20110101018.jpg]}
 	\label{fig_labelplacements}
@@ -267,6 +267,6 @@ Bei einer MetroMap ist es sehr wichtig zu unterscheiden um welche Art der Verbin
 
 Eine MetroMap verliert ihre Eigenschaft der Topologie sowie der geographischen Richtigkeit im Vergleich zu einer normalen Karte, dies resultiert zwingend aus der Verschiebung der Knoten und Kanten um einen übersichtlicheren Graphen zu bekommen. Da die Verbindungen aus den realen Netzen modelliert wurden, wird stets eine gewisse Topologie beibehalten beim Erstellen der MetroMap. Dabei wird der geographische Abstand zwischen zwei Punkten vernachlässigt. Die Lage der ursprünglichen Stationen ist zur Bewahrung der Navigation da weitaus wichtiger. Es würde auch stark verwirren wenn eine Verbindung von A über B nach C geht, die eigentlichen Stationen auf der Karte jedoch in Reihenfolge A C B gezeichnet werden. Dies würde auch im Widerspruch dazustehen, gerade Kanten aufrechtzuerhalten und ganze Verbindungen möglichst senkrecht und waagerecht zu zeichnen. \\
 
-Neben der Platzierung der Kanten und Knoten ist es sehr wichtig eine passende Beschriftung der Objekte in der MetroMap zu haben. Für diese Beschriftungen muss es den Platz geben, da sich die Beschriftungen nicht mit den Kanten oder Knoten überschneiden dürfen. Wenn der Abstand zwischen den jeweiligen Beschriftungen der Kanten und Knoten zu weit oder zu nah ist, wird es schwierig zu erkennen zu welchem Objekt diese gehört. 
+Neben der Platzierung der Kanten und Knoten ist es sehr wichtig eine passende Beschriftung der Objekte in der MetroMap zu haben. Für diese Beschriftungen muss es den Platz geben, da sich die Beschriftungen nicht mit den Kanten oder Knoten überschneiden dürfen. Wenn der Abstand zwischen den jeweiligen Beschriftungen der Kanten und Knoten zu weit oder zu nah ist, wird es schwierig zu erkennen zu welchem Objekt diese gehört. \\
 
-Ein möglicher Ansatz dieses Problem zu lösen wäre es jedem Objekt eine gewisse Anzahl von möglichen Beschriftungspositionen zu geben und anschließend die sich überschneidenden Positionen als mögliche Beschriftungen zu streichen. Was bleibt sind überschneidungsfreie Beschriftungen eines jeden Objektes. Es müssen demnach zu erst die möglichen Beschriftungspositionen eines Objektes gefunden werden. Dazu werden 8 Positionen um das jeweilige Objekt gewählt, wie in der Abbildung 2.x dargestellt. Man kann diesen Positionen nun eine Wertigkeit geben. Im $45$ Winkel zum Objekt, wäre die Beschriftung generell am besten platziert um einen übersichtlichen Graphen zu bekommen. Nun ist es leicht die beste überschneidungsfreie Beschriftung mit den geringsten Kosten zu finden. Die Kosten stellen die Wertigkeit der Positionen aller Beschriftungen der Objekte.  
+Ein möglicher Ansatz dieses Problem zu lösen wäre es jedem Objekt eine gewisse Anzahl von möglichen Beschriftungspositionen zu geben und anschließend die sich überschneidenden Positionen als mögliche Beschriftungen zu streichen. Was bleibt sind überschneidungsfreie Beschriftungen eines jeden Objektes. Es müssen demnach zu erst die möglichen Beschriftungspositionen eines Objektes gefunden werden. Dazu werden 8 Positionen um das jeweilige Objekt gewählt, wie in der Abbildung 2.x dargestellt. Es ist nun möglich diesen Positionen eine Wertigkeit zuzuweisen. Im $45$ Winkel zum Objekt, wäre die Beschriftung generell am besten platziert um einen übersichtlichen Graphen zu bekommen. Nun ist es leicht die beste überschneidungsfreie Beschriftung mit den geringsten Kosten zu finden. Die Kosten stellen die Wertigkeit der Positionen aller Beschriftungen der Objekte.  

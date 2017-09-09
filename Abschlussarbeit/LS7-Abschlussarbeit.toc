@@ -7,17 +7,19 @@
 \contentsline {section}{\numberline {2.1}H\IeC {\"o}chstspannungsnetz}{7}{section.2.1}
 \contentsline {section}{\numberline {2.2}Graph}{13}{section.2.2}
 \contentsline {section}{\numberline {2.3}Vom H\IeC {\"o}chstspannungsnetz zum Graphen}{16}{section.2.3}
-\contentsline {section}{\numberline {2.4}MetroMap Layout Problem}{19}{section.2.4}
-\contentsline {chapter}{\numberline {3}Spring-Embedder}{23}{chapter.3}
-\contentsline {section}{\numberline {3.1}Spring-Embedder - allgemein}{23}{section.3.1}
-\contentsline {section}{\numberline {3.2}Spring-Embedder - Vorgehen}{27}{section.3.2}
-\contentsline {section}{\numberline {3.3}Spring-Algorithmus - Erweiterbarkeit}{29}{section.3.3}
-\contentsline {chapter}{\numberline {4}Anwendung des Spring-Embedders auf den modellierten Graphen}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Nachteile des Spring-Embedders auf der Anwendung des Graphen}{32}{section.4.1}
-\contentsline {section}{\numberline {4.2}Anpassung des Spring-Embedders zur Anwendung auf das modellierte H\IeC {\"o}chstspannungsnetz}{35}{section.4.2}
-\contentsline {section}{\numberline {4.3}Weitere Ans\IeC {\"a}tze zur Verbesserung des Layouts}{40}{section.4.3}
-\contentsline {chapter}{\numberline {A}Weitere Informationen}{41}{appendix.A}
-\contentsline {chapter}{Abbildungsverzeichnis}{43}{chapter*.26}
-\contentsline {chapter}{Algorithmenverzeichnis}{45}{chapter*.27}
-\contentsline {chapter}{Quellcodeverzeichnis}{47}{chapter*.28}
-\contentsline {chapter}{Literaturverzeichnis}{49}{chapter*.28}
+\contentsline {section}{\numberline {2.4}MetroMap Layout Problem}{17}{section.2.4}
+\contentsline {chapter}{\numberline {3}Spring-Embedder}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Spring-Embedder - allgemein}{25}{section.3.1}
+\contentsline {section}{\numberline {3.2}Spring-Embedder - Vorgehen}{28}{section.3.2}
+\contentsline {chapter}{\numberline {4}Anwendung des Spring-Embedders auf den modellierten Graphen}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}Vergleich des vom Algorithmus erhaltenen Layout mit dem einer MetroMap}{39}{section.4.1}
+\contentsline {section}{\numberline {4.2}Nachteile des Spring-Embedders auf der Anwendung des Graphen}{40}{section.4.2}
+\contentsline {section}{\numberline {4.3}Anpassung des Spring-Embedders zur Anwendung auf das modellierte H\IeC {\"o}chstspannungsnetz}{43}{section.4.3}
+\contentsline {section}{\numberline {4.4}Bildung nahezu paralleler Leiterseile mittels dem Spring-Embedder}{48}{section.4.4}
+\contentsline {section}{\numberline {4.5}Einbettung der Knoten in Felder}{52}{section.4.5}
+\contentsline {section}{\numberline {4.6}Evaluierung und Fazit}{53}{section.4.6}
+\contentsline {chapter}{\numberline {A}Weitere Informationen}{59}{appendix.A}
+\contentsline {chapter}{Abbildungsverzeichnis}{62}{chapter*.34}
+\contentsline {chapter}{Algorithmenverzeichnis}{63}{chapter*.35}
+\contentsline {chapter}{Quellcodeverzeichnis}{65}{chapter*.36}
+\contentsline {chapter}{Literaturverzeichnis}{67}{chapter*.36}
